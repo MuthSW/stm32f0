@@ -36,15 +36,6 @@
 #include "gpio.h"
 /* USER CODE BEGIN 0 */
 
-/** @defgroup STM32F0308_DISCOVERY_Private_Variables Private Variables
-  * @{
-  */
-GPIO_TypeDef* LED_PORT[LEDn] = {LED3_GPIO_PORT, LED4_GPIO_PORT};
-const uint16_t LED_PIN[LEDn] = {LED3_PIN, LED4_PIN};
-
-GPIO_TypeDef* BUTTON_PORT[BUTTONn] = {USER_BUTTON_GPIO_PORT};
-const uint16_t BUTTON_PIN[BUTTONn] = {USER_BUTTON_PIN};
-const uint8_t BUTTON_IRQn[BUTTONn] = {USER_BUTTON_EXTI_IRQn};
 
 /* USER CODE END 0 */
 
@@ -145,16 +136,7 @@ void MX_GPIO_Init(void)
 }
 
 /* USER CODE BEGIN 2 */
-/**
-  * @brief  Returns the selected Button state.
-  * @param  Button: Specifies the Button to be checked.
-  *   This parameter should be: BUTTON_USER
-  * @retval The Button GPIO pin value.
-  */
-uint32_t BSP_PB_GetState(Button_TypeDef Button)
-{
-  return HAL_GPIO_ReadPin(BUTTON_PORT[Button], BUTTON_PIN[Button]);
-}
+
 
 /* USER CODE END 2 */
 

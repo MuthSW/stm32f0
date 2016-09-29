@@ -35,6 +35,7 @@
 #include "adc.h"
 #include "rtc.h"
 #include "gpio.h"
+#include "stm32f0308_discovery.h"
 
 /* USER CODE BEGIN Includes */
 
@@ -42,6 +43,8 @@
 
 /* Private variables ---------------------------------------------------------*/
 uint32_t button_state;
+RTC_TimeTypeDef RTC_TimeStructure;
+RTC_HandleTypeDef RtcHandle;
 
 /* USER CODE BEGIN PV */
 /* Private variables ---------------------------------------------------------*/
@@ -52,6 +55,7 @@ uint32_t old_state;
 /* Private function prototypes -----------------------------------------------*/
 void SystemClock_Config(void);
 void Error_Handler(void);
+void Blink(Led_TypeDef Led, uint8_t number);
 
 /* USER CODE BEGIN PFP */
 /* Private function prototypes -----------------------------------------------*/
@@ -93,6 +97,16 @@ int main(void)
 	  button_state = BSP_PB_GetState(BUTTON_USER);
 	  if (button_state != old_state){
 		  old_state = button_state;
+		  if (button_state == 0)
+		  {
+			BSP_LED_Toggle(LED_GREEN);
+			HAL_RTC_GetTime(&RtcHandle, &RTC_TimeStructure, RTC_FORMAT_BIN);
+			uint8_t hour=RTC_TimeStructure.Hours;
+			uint8_t min=RTC_TimeStructure.Minutes;
+			uint8_t sec=RTC_TimeStructure.Seconds;
+			Blink(LED_GREEN, hour);
+		  }
+
 	  }
   /* USER CODE END WHILE */
 
@@ -155,6 +169,15 @@ void SystemClock_Config(void)
 
 /* USER CODE BEGIN 4 */
 
+void Blink(Led_TypeDef Led, uint8_t number)
+{
+	uint8_t i;
+	for (i=0; i<= number; i++){
+		BSP_LED_Toggle(Led);
+		HAL_Delay(500);
+	}
+}
+
 /* USER CODE END 4 */
 
 /**
@@ -168,6 +191,8 @@ void Error_Handler(void)
   /* User can add his own implementation to report the HAL error return state */
   while(1) 
   {
+	  Blink(LED_BLUE, 5);
+	  HAL_Delay(1000);
   }
   /* USER CODE END Error_Handler */ 
 }

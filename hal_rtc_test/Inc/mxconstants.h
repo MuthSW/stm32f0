@@ -53,25 +53,6 @@
 #define SWCLK_GPIO_Port GPIOA
 /* USER CODE BEGIN Private defines */
 
-/**
- * @brief LED Types Definition
- */
-typedef enum
-{
-  LED3 = 0,
-  LED4 = 1,
-  /* Color led aliases */
-  LED_GREEN  = LED3,
-  LED_BLUE   = LED4
-}Led_TypeDef;
-
-/**
- * @brief BUTTON Types Definition
- */
-typedef enum
-{
-  BUTTON_USER = 0
-}Button_TypeDef;
 
 /**
  *

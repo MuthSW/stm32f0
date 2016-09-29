@@ -47,49 +47,12 @@
 /* USER CODE END Includes */
 
 /* USER CODE BEGIN Private defines */
-#define LEDn                             2
-
-#define LED3_PIN                         LD3_Pin
-#define LED3_GPIO_PORT                   LD3_GPIO_Port
-#define LED3_GPIO_CLK_ENABLE()           __HAL_RCC_GPIOC_CLK_ENABLE()
-#define LED3_GPIO_CLK_DISABLE()          __HAL_RCC_GPIOC_CLK_DISABLE()
-
-#define LED4_PIN                         LD4_Pin
-#define LED4_GPIO_PORT                   LD4_GPIO_Port
-#define LED4_GPIO_CLK_ENABLE()           __HAL_RCC_GPIOC_CLK_ENABLE()
-#define LED4_GPIO_CLK_DISABLE()          __HAL_RCC_GPIOC_CLK_DISABLE()
-
-#define LEDx_GPIO_CLK_ENABLE(__LED__)   do { if((__LED__) == LED3) LED3_GPIO_CLK_ENABLE(); else \
-                                         if((__LED__) == LED4) LED4_GPIO_CLK_ENABLE();} while(0)
-
-#define LEDx_GPIO_CLK_DISABLE(__LED__)  (((__LED__) == LED3) ? LED3_GPIO_CLK_DISABLE() :\
-                                         ((__LED__) == LED4) ? LED4_GPIO_CLK_DISABLE() : 0 )
-
-/** @defgroup STM32F0308_DISCOVERY_BUTTON STM32F0308_DISCOVERY BUTTON
-  * @{
-  */
-#define BUTTONn                          1
-
-/**
- * @brief USER push-button
- */
-#define USER_BUTTON_PIN                B1_Pin                       /* PA0 */
-#define USER_BUTTON_GPIO_PORT          B1_GPIO_Port
-#define USER_BUTTON_GPIO_CLK_ENABLE()  __HAL_RCC_GPIOA_CLK_ENABLE()
-#define USER_BUTTON_GPIO_CLK_DISABLE() __HAL_RCC_GPIOA_CLK_DISABLE()
-#define USER_BUTTON_EXTI_IRQn          EXTI0_1_IRQn
-
-#define BUTTONx_GPIO_CLK_ENABLE(__BUTTON__)    do { if((__BUTTON__) == BUTTON_USER) USER_BUTTON_GPIO_CLK_ENABLE();} while(0)
-
-#define BUTTONx_GPIO_CLK_DISABLE(__BUTTON__)   (((__BUTTON__) == BUTTON_USER) ? USER_BUTTON_GPIO_CLK_DISABLE() : 0 )
-
 
 /* USER CODE END Private defines */
 
 void MX_GPIO_Init(void);
 
 /* USER CODE BEGIN Prototypes */
-uint32_t BSP_PB_GetState(Button_TypeDef Button);
 
 /* USER CODE END Prototypes */
 
