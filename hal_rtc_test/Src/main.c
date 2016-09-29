@@ -35,30 +35,29 @@
 #include "adc.h"
 #include "rtc.h"
 #include "gpio.h"
-#include "stm32f0308_discovery.h"
 
 /* USER CODE BEGIN Includes */
+#include "stm32f0308_discovery.h"
 
 /* USER CODE END Includes */
 
 /* Private variables ---------------------------------------------------------*/
-uint32_t button_state;
-RTC_TimeTypeDef RTC_TimeStructure;
-RTC_HandleTypeDef RtcHandle;
 
 /* USER CODE BEGIN PV */
 /* Private variables ---------------------------------------------------------*/
 uint32_t old_state;
+RTC_HandleTypeDef RtcHandle;
+RTC_TimeTypeDef RTC_TimeStructure;
 
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
 void SystemClock_Config(void);
 void Error_Handler(void);
-void Blink(Led_TypeDef Led, uint8_t number);
 
 /* USER CODE BEGIN PFP */
 /* Private function prototypes -----------------------------------------------*/
+void Blink(Led_TypeDef Led, uint8_t number);
 
 /* USER CODE END PFP */
 
@@ -70,6 +69,7 @@ int main(void)
 {
 
   /* USER CODE BEGIN 1 */
+  uint32_t button_state, old_state=0;
 
   /* USER CODE END 1 */
 
