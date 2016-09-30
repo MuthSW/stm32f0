@@ -53,10 +53,6 @@
 #define SWCLK_GPIO_Port GPIOA
 /* USER CODE BEGIN Private defines */
 
-
-/**
- *
- */
 /* USER CODE END Private defines */
 
 /**

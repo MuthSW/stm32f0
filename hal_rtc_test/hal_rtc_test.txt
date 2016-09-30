@@ -1,6 +1,6 @@
 Configuration	hal_rtc_test
-STM32CubeMX 	4.16.1
-Date	09/28/2016
+STM32CubeMX 	4.15.1
+Date	09/30/2016
 MCU	STM32F051R8Tx
 
 
@@ -9,7 +9,7 @@ PERIPHERALS	MODES	FUNCTIONS	PINS
 ADC	Single-ended	ADC_TempSens_Input	VP_ADC_TempSens_Input
 ADC	Vrefint Channel	ADC_Vref_Input	VP_ADC_Vref_Input
 ADC	Vbat Channel	ADC_Vbat_Input	VP_ADC_Vbat_Input
-RTC	Calibration 512Hz	RTC_OUT_CALIB	PC13
+RTC	Routed to OUT	RTC_OUT_ALARM	PC13
 SYS	Serial_Wire	SYS_SWCLK	PA14
 SYS	Serial_Wire	SYS_SWDIO	PA13
 SYS	SysTick	SYS_VS_Systick	VP_SYS_VS_Systick
@@ -17,7 +17,7 @@ SYS	SysTick	SYS_VS_Systick	VP_SYS_VS_Systick
 
 
 Pin Nb	PINs	FUNCTIONs	LABELs
-2	PC13	RTC_OUT_CALIB	
+2	PC13	RTC_OUT_ALARM	
 14	PA0	GPIO_EXTI0	B1 [Blue PushButton]
 39	PC8	GPIO_Output	LD4 [Blue Led]
 40	PC9	GPIO_Output	LD3 [Green Led]
@@ -40,7 +40,7 @@ STM32Cube Firmware Library Package : Add necessary library files as reference in
 Generate peripheral initialization as a pair of '.c/.h' files per peripherals : Yes
 Backup previously generated files when re-generating : No
 Delete previously generated files when not re-generated : Yes
-Set all free pins as analog (to optimize the power consumption) : Yes
+Set all free pins as analog (to optimize the power consumption) : No
 
 
 Toolchains Settings : 

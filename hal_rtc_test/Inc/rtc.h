@@ -56,6 +56,8 @@ extern void Error_Handler(void);
 void MX_RTC_Init(void);
 
 /* USER CODE BEGIN Prototypes */
+RTC_HandleTypeDef get_Rtc_Handle();
+HAL_StatusTypeDef RTC_Set_Time(uint8_t hh, uint8_t mm, uint8_t ss);
 
 /* USER CODE END Prototypes */
 

@@ -34,7 +34,10 @@
 #include "stm32f0xx_hal.h"
 #include "adc.h"
 #include "rtc.h"
+#include "tim.h"
 #include "gpio.h"
+#include <stdio.h>
+
 
 /* USER CODE BEGIN Includes */
 #include "stm32f0308_discovery.h"
@@ -45,19 +48,22 @@
 
 /* USER CODE BEGIN PV */
 /* Private variables ---------------------------------------------------------*/
-uint32_t old_state;
+/* RTC handler declaration */
 RTC_HandleTypeDef RtcHandle;
-RTC_TimeTypeDef RTC_TimeStructure;
+
+/* Buffer used for displaying Time */
+uint8_t aShowTime[50] = {0};
 
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
 void SystemClock_Config(void);
 void Error_Handler(void);
+static void RTC_AlarmConfig(void);
+static void RTC_TimeShow(uint8_t* showtime);
 
 /* USER CODE BEGIN PFP */
 /* Private function prototypes -----------------------------------------------*/
-void Blink(Led_TypeDef Led, uint8_t number);
 
 /* USER CODE END PFP */
 
@@ -69,7 +75,6 @@ int main(void)
 {
 
   /* USER CODE BEGIN 1 */
-  uint32_t button_state, old_state=0;
 
   /* USER CODE END 1 */
 
@@ -85,8 +90,24 @@ int main(void)
   MX_GPIO_Init();
   MX_ADC_Init();
   MX_RTC_Init();
+  MX_TIM6_Init();
 
   /* USER CODE BEGIN 2 */
+  RtcHandle = get_Rtc_Handle();
+
+  /*##-1- set RTC time #######################################*/
+
+  if (RTC_Set_Time(0x23, 0x58, 0x00) != HAL_OK)
+  {
+	  Error_Handler();
+  }
+
+  /* Configure RTC Alarm */
+//  if (RTC_AlarmConfig() != HAL_OK)
+//  {
+//	  Error_Handler();
+//  }
+  RTC_AlarmConfig();
 
   /* USER CODE END 2 */
 
@@ -94,20 +115,10 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-	  button_state = BSP_PB_GetState(BUTTON_USER);
-	  if (button_state != old_state){
-		  old_state = button_state;
-		  if (button_state == 0)
-		  {
-			BSP_LED_Toggle(LED_GREEN);
-			HAL_RTC_GetTime(&RtcHandle, &RTC_TimeStructure, RTC_FORMAT_BIN);
-			uint8_t hour=RTC_TimeStructure.Hours;
-			uint8_t min=RTC_TimeStructure.Minutes;
-			uint8_t sec=RTC_TimeStructure.Seconds;
-			Blink(LED_GREEN, hour);
-		  }
+	BSP_LED_Toggle(LED_GREEN);
+	RTC_TimeShow(aShowTime);
+	HAL_Delay(1000);
 
-	  }
   /* USER CODE END WHILE */
 
   /* USER CODE BEGIN 3 */
@@ -169,14 +180,96 @@ void SystemClock_Config(void)
 
 /* USER CODE BEGIN 4 */
 
-void Blink(Led_TypeDef Led, uint8_t number)
+/**
+  * @brief  Alarm callback
+  * @param  hrtc : RTC handle
+  * @retval None
+  */
+void HAL_RTC_AlarmAEventCallback(RTC_HandleTypeDef *hrtc)
 {
-	uint8_t i;
-	for (i=0; i<= number; i++){
-		BSP_LED_Toggle(Led);
-		HAL_Delay(500);
-	}
+  /* Turn LED3 on: Alarm generation */
+  BSP_LED_On(LED_BLUE);
 }
+
+/**
+  * @brief  Configure the current time and date.
+  * @param  None
+  * @retval None
+  */
+static void RTC_AlarmConfig(void)
+{
+	  RTC_DateTypeDef  sdatestructure;
+	  RTC_TimeTypeDef  stimestructure;
+	  RTC_AlarmTypeDef salarmstructure;
+
+	  /*##-1- Configure the Date #################################################*/
+	  /* Set Date: Tuesday February 18th 2014 */
+	  sdatestructure.Year = 0x14;
+	  sdatestructure.Month = RTC_MONTH_FEBRUARY;
+	  sdatestructure.Date = 0x18;
+	  sdatestructure.WeekDay = RTC_WEEKDAY_TUESDAY;
+
+	  if(HAL_RTC_SetDate(&RtcHandle,&sdatestructure,RTC_FORMAT_BCD) != HAL_OK)
+	  {
+			/* Initialization Error */
+			Error_Handler();
+	  }
+
+	  /*##-2- Configure the Time #################################################*/
+	  /* Set Time: 02:20:00 */
+	  stimestructure.Hours = 0x02;
+	  stimestructure.Minutes = 0x20;
+	  stimestructure.Seconds = 0x00;
+	  stimestructure.TimeFormat = RTC_HOURFORMAT12_AM;
+	  stimestructure.DayLightSaving = RTC_DAYLIGHTSAVING_NONE ;
+	  stimestructure.StoreOperation = RTC_STOREOPERATION_RESET;
+
+	  if(HAL_RTC_SetTime(&RtcHandle,&stimestructure,RTC_FORMAT_BCD) != HAL_OK)
+	  {
+			/* Initialization Error */
+			Error_Handler();
+	  }
+
+	  /*##-3- Configure the RTC Alarm peripheral #################################*/
+	  /* Set Alarm to 02:20:30
+		 RTC Alarm Generation: Alarm on Hours, Minutes and Seconds */
+	  salarmstructure.Alarm = RTC_ALARM_A;
+	  salarmstructure.AlarmDateWeekDay = RTC_WEEKDAY_MONDAY;
+	  salarmstructure.AlarmDateWeekDaySel = RTC_ALARMDATEWEEKDAYSEL_DATE;
+	  salarmstructure.AlarmMask = RTC_ALARMMASK_DATEWEEKDAY;
+	  salarmstructure.AlarmSubSecondMask = RTC_ALARMSUBSECONDMASK_NONE;
+	  salarmstructure.AlarmTime.TimeFormat = RTC_HOURFORMAT12_AM;
+	  salarmstructure.AlarmTime.Hours = 0x02;
+	  salarmstructure.AlarmTime.Minutes = 0x20;
+	  salarmstructure.AlarmTime.Seconds = 0x30;
+	  salarmstructure.AlarmTime.SubSeconds = 0x56;
+
+	  if(HAL_RTC_SetAlarm_IT(&RtcHandle,&salarmstructure,RTC_FORMAT_BCD) != HAL_OK)
+	  {
+			/* Initialization Error */
+			Error_Handler();
+	  }
+}
+
+
+/**
+  * @brief  Display the current time.
+  * @param  showtime : pointer to buffer
+  * @retval None
+  */
+static void RTC_TimeShow(uint8_t* showtime)
+{
+  RTC_DateTypeDef sdatestructureget;
+  RTC_TimeTypeDef stimestructureget;
+
+  /* Get the RTC current Time */
+  HAL_RTC_GetTime(&RtcHandle, &stimestructureget, RTC_FORMAT_BIN);
+  /* Get the RTC current Date */
+  HAL_RTC_GetDate(&RtcHandle, &sdatestructureget, RTC_FORMAT_BIN);
+  /* Display time Format : hh:mm:ss */
+  sprintf((char*)showtime,"%02d:%02d:%02d",stimestructureget.Hours, stimestructureget.Minutes, stimestructureget.Seconds);
+}
+
 
 /* USER CODE END 4 */
 
@@ -191,8 +284,8 @@ void Error_Handler(void)
   /* User can add his own implementation to report the HAL error return state */
   while(1) 
   {
-	  Blink(LED_BLUE, 5);
-	  HAL_Delay(1000);
+		BSP_LED_Toggle(LED_BLUE);
+		HAL_Delay(200);
   }
   /* USER CODE END Error_Handler */ 
 }

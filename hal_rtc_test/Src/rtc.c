@@ -37,6 +37,66 @@
 
 /* USER CODE BEGIN 0 */
 
+RTC_HandleTypeDef get_Rtc_Handle(){
+	return hrtc;
+}
+
+HAL_StatusTypeDef RTC_Set_Time(uint8_t hh, uint8_t mm, uint8_t ss)
+{
+	RTC_TimeTypeDef sTime;
+
+	if(&hrtc == NULL){
+		return HAL_ERROR;
+	}
+
+	/**Initialize RTC and set the Time and Date
+	*/
+	hrtc.Instance = RTC;
+	hrtc.Init.HourFormat = RTC_HOURFORMAT_24;
+	hrtc.Init.AsynchPrediv = 127;
+	hrtc.Init.SynchPrediv = 255;
+	hrtc.Init.OutPut = RTC_OUTPUT_ALARMA;
+	hrtc.Init.OutPutPolarity = RTC_OUTPUT_POLARITY_HIGH;
+	hrtc.Init.OutPutType = RTC_OUTPUT_TYPE_OPENDRAIN;
+	if (HAL_RTC_Init(&hrtc) != HAL_OK)
+	{
+		return HAL_ERROR;
+	}
+
+	sTime.Hours = hh;
+	sTime.Minutes = mm;
+	sTime.Seconds = ss;
+	sTime.DayLightSaving = RTC_DAYLIGHTSAVING_NONE;
+	sTime.StoreOperation = RTC_STOREOPERATION_RESET;
+	if (HAL_RTC_SetTime(&hrtc, &sTime, RTC_FORMAT_BCD) != HAL_OK)
+	{
+		return HAL_ERROR;
+	}
+
+	return HAL_OK;
+}
+
+HAL_StatusTypeDef RTC_Set_Date(uint8_t m, uint8_t y)
+{
+	RTC_DateTypeDef sDate;
+
+	if(&hrtc == NULL){
+		return HAL_ERROR;
+	}
+
+	sDate.WeekDay = RTC_WEEKDAY_MONDAY;
+	sDate.Month = RTC_MONTH_JANUARY;
+	sDate.Date = 0x1;
+	sDate.Year = 0x0;
+
+	if(HAL_RTC_SetDate(&hrtc, &sDate, RTC_FORMAT_BCD) != HAL_OK)
+	{
+		return HAL_ERROR;
+	}
+
+	return HAL_OK;
+}
+
 /* USER CODE END 0 */
 
 RTC_HandleTypeDef hrtc;
@@ -113,6 +173,11 @@ void HAL_RTC_MspInit(RTC_HandleTypeDef* rtcHandle)
     /* Peripheral clock enable */
     __HAL_RCC_RTC_ENABLE();
   /* USER CODE BEGIN RTC_MspInit 1 */
+    HAL_PWR_EnableBkUpAccess();
+
+//    /*##-4- Configure the NVIC for RTC Alarm ###################################*/
+//    HAL_NVIC_SetPriority(RTC_IRQn, 0x0F, 0);
+//    HAL_NVIC_EnableIRQ(RTC_IRQn);
 
   /* USER CODE END RTC_MspInit 1 */
   }
