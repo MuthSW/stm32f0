@@ -1,0 +1,2942 @@
+ver: PWS/8.1.41.3
+Transfer-Encoding: chunked
+X-Px: ms h0-s1055.p11-fra ( h0-s1028.p11-fra), ms h0-s1028.p11-fra ( origin>CONN)
+ETag: "6812e6-1c6ea-53c8decf26f6b"
+Cache-Control: public,max-age=1800
+Content-Type: text/html; charset=UTF-8
+Last-Modified: Thu, 15 Sep 2016 15:59:06 GMT
+User-Cache-Control: public,max-age=1800
+Vary: Accept-Encoding
+Connection: keep-alive
+
+13e0d
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie10 lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie10 lt-ie9 lt-ie8 ie7" lang="en"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie10 lt-ie9 ie8" lang="en"> <![endif]-->
+<!--[if IE 9]>         <html class="no-js lt-ie10 ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
+    <head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+    
+        <meta name="content-language" content="en"/>
+    
+        <meta name="browserSupportPage" content="/content/st_com/en/browser-warning.html"/>
+    
+        <meta name="keywords"/>
+    
+        <meta name="description"/>
+    
+
+
+<link rel="icon" type="image/png" href="/etc/clientlibs/st-site/media/app/images/favicon.png">
+<title>404 Error Page - STMicroelectronics
+</title>
+
+<script type="text/javascript">
+window.digitalData = {"page":{"pageInfo":{"breadCrumbs":"error:404","pageShortName":"error:404","pageName":"error:404","destinationURL":"https://www.st.com/content/st_com/en/error/404.html","isIframe":false,"contentIframe":false,"hierarchie1":"error:404","hierarchie2":"","sysEnv":"desktop","pageID":"www.st.com:content:st_com:en:error:404","server":"www.st.com","urlShortcut":""},"category":{"primaryCategory":"STMicroelectronics Home","type":"Home Page","version":"2015-6-10"},"attributes":{"version":"3.35.0"},"components":{}},"product":[{"productInfo":{"tree":{}}}],"user":[{"profile":[{"profileInfo":{},"attributes":{"loggedIn":false}}]}],"pageInstanceID":"eu:01:prod:publish:error:404","language":"en"};
+window.digitalData.page.pageInfo.referringURL = document.referrer;
+window.digitalData.page.pageInfo.originalURL  = document.location.href;
+if (window.digitalData.page.category.error) {
+	window.digitalData.page.category.error += document.location.href;
+	var s_errorType = window.digitalData.page.pageInfo.statusCode;
+	var s_originURL = document.location.href;
+}
+if(window.digitalData.page.pageInfo.pageName=="error:404"){
+	window.digitalData.page.pageInfo.destinationURL  = document.location.href
+	window.digitalData.page.category.error = "404 Error Page:" + document.location.href;
+    var s_errorType = "404";
+	var s_originURL = document.location.href;
+}
+</script>
+
+<script src="//assets.adobedtm.com/11dc30a7b133a285a2cd4dec7a727fdd540176b8/satelliteLib-64dcac14fa0827e56e581f0a37f4b24b3448da8a.js"></script>
+
+
+
+
+
+
+
+
+    
+<link rel="stylesheet" href="/etc/clientlibs/bower.d31fcf363af4d035eeadeb9e57419603.css" type="text/css">
+<link rel="stylesheet" href="/etc/clientlibs/st-site.208b9a29e3f64a5c27259baf7e985b50.css" type="text/css">
+
+
+
+
+    
+<script type="text/javascript" src="/etc/clientlibs/modernizr.af71e73c084534b45bdd06224977b260.js"></script>
+
+
+
+
+    
+<script type="text/javascript" src="/etc/clientlibs/st-site/components/st-app-head.0f22b536f6f658008f76ad4bcdf74f3b.js"></script>
+
+
+
+
+</head>
+
+    <body id="st-site">
+        <div><link rel="stylesheet" href="/etc/clientlibs/st-ccc/widgets/ccc/theme.b0580096ff3e93433b39166175dfe232.css" type="text/css">
+<link rel="stylesheet" href="/etc/clientlibs/st-admin/widgets/themes.72d20a0796c26ee40b15b2effca8e7ab.css" type="text/css">
+<script type="text/javascript" src="/etc/clientlibs/granite/jquery.d311399a202bbfe8f6b94a4546a2a025.js"></script>
+<script type="text/javascript" src="/etc/clientlibs/granite/utils.ff9a9bab4c0b4a937644bef945322537.js"></script>
+<script type="text/javascript" src="/etc/clientlibs/granite/jquery/granite.67087856594f309152bcc6962cb47972.js"></script>
+<script type="text/javascript" src="/etc/clientlibs/foundation/jquery.d7c42e4a257b8b9fe38d1c53dd20d01a.js"></script>
+<script type="text/javascript" src="/etc/clientlibs/foundation/shared.793f328bd9a3670b84ffa3a2be93329f.js"></script>
+<script type="text/javascript" src="/etc/clientlibs/granite/lodash/modern.7b2eea6898007731c2ec2232f96726c7.js"></script>
+<script type="text/javascript" src="/etc/clientlibs/foundation/personalization/kernel.45fc7ac112b409d776f2df08d64d5bb7.js"></script>
+<script type="text/javascript">
+    $CQ(function() {
+        CQ_Analytics.SegmentMgr.loadSegments("\/etc\/segmentation");
+        CQ_Analytics.ClientContextUtils.init("\/etc\/clientcontext\/default", "\/content\/st_com\/en\/error\/404");
+
+        
+    });
+</script>
+</div>
+
+        <div><div class="off-canvas-wrap" data-offcanvas>
+    <div class="inner-wrap">
+        <div id="stmicro" class="">
+            
+    <aside class="left-off-canvas-menu hide-for-print">
+        <ul class="off-canvas-list">
+            <li><label>STMicroelectronics</label></li>
+            
+            
+        
+            
+            
+            
+        
+            
+            
+            
+        
+            
+            <li class="has-submenu">
+                <a href="#.html" target="_self">
+                    Products
+                </a>
+                <ul class="left-submenu move-right">
+                    <li class="back"><a href="#">Back</a></li>
+                    <dl>
+                        <li class="familytitle">Sensors, Analog, Power and Automotive Products</li>
+                        <dl>
+                            <li><a href="/content/st_com/en/products/aerospace-and-defense-products.html">Aerospace and Defense Products</a></li>
+                        
+                            <li><a href="/content/st_com/en/products/amplifiers-and-comparators.html">Amplifiers and Comparators </a></li>
+                        
+                            <li><a href="/content/st_com/en/products/audio-ics.html">Audio ICs</a></li>
+                        
+                            <li><a href="/content/st_com/en/products/automotive-analog-power-ics.html">Automotive Analog &amp; Power ICs</a></li>
+                        
+                            <li><a href="/content/st_com/en/products/automotive-infotainment-and-telematics.html">Automotive Infotainment and Telematics</a></li>
+                        
+                            <li><a href="/content/st_com/en/products/automotive-logic-ics.html">Automotive Logic ICs</a></li>
+                        
+                            <li><a href="/content/st_com/en/products/automotive-microcontrollers.html">Automotive Microcontrollers</a></li>
+                        
+                            <li><a href="/content/st_com/en/products/clocks-and-timers.html">Clocks and Timers</a></li>
+                        
+                            <li><a href="/content/st_com/en/products/data-converters.html">Data Converters </a></li>
+                        
+                            <li><a href="/content/st_com/en/products/diodes-and-rectifiers.html">Diodes and Rectifiers</a></li>
+                        
+                            <li><a href="/content/st_com/en/products/emi-filtering-and-signal-conditioning.html">EMI Filtering and Signal Conditioning</a></li>
+                        
+                            <li><a href="/content/st_com/en/products/interfaces-and-transceivers.html">Interfaces and Transceivers</a></li>
+                        
+                            <li><a href="/content/st_com/en/products/mems-and-sensors.html">MEMS and Sensors</a></li>
+                        
+                            <li><a href="/content/st_com/en/products/motor-drivers.html">Motor Drivers</a></li>
+                        
+                            <li><a href="/content/st_com/en/products/power-management.html">Power Management</a></li>
+                        
+                            <li><a href="/content/st_com/en/products/power-modules.html">Power Modules</a></li>
+                        
+                            <li><a href="/content/st_com/en/products/power-transistors.html">Power Transistors</a></li>
+                        
+                            <li><a href="/content/st_com/en/products/protection-devices.html">Protection Devices</a></li>
+                        
+                            <li><a href="/content/st_com/en/products/radio-frequency-transistors.html">Radio Frequency Transistors</a></li>
+                        
+                            <li><a href="/content/st_com/en/products/reset-and-supervisor-ics.html">Reset and Supervisor ICs</a></li>
+                        
+                            <li><a href="/content/st_com/en/products/switches-and-multiplexers.html">Switches and Multiplexers</a></li>
+                        
+                            <li><a href="/content/st_com/en/products/thyristors-scr-and-ac-switches.html">Thyristors (SCR) and AC Switches</a></li>
+                        
+                            <li><a href="/content/st_com/en/products/wireless-connectivity.html">Wireless Connectivity </a></li>
+                        </dl>
+                    
+                        <li class="familytitle">Microcontrollers, Memories, Imaging and Digital ICs</li>
+                        <dl>
+                            <li><a href="/content/st_com/en/products/digital-set-top-box-ics.html">Digital Set-Top Box ICs</a></li>
+                        
+                            <li><a href="/content/st_com/en/products/display-controllers.html">Display Controllers</a></li>
+                        
+                            <li><a href="/content/st_com/en/products/imaging-and-photonics-solutions.html">Imaging and Photonics Solutions</a></li>
+                        
+                            <li><a href="/content/st_com/en/products/memories.html">Memories</a></li>
+                        
+                            <li><a href="/content/st_com/en/products/microcontrollers.html">Microcontrollers</a></li>
+                        
+                            <li><a href="/content/st_com/en/products/nfc.html">NFC</a></li>
+                        
+                            <li><a href="/content/st_com/en/products/spear-embedded-microprocessors.html">SPEAr Embedded Microprocessors</a></li>
+                        
+                            <li><a href="/content/st_com/en/products/secure-mcus.html">Secure MCUs</a></li>
+                        </dl>
+                    </dl>
+                </ul>
+            </li>
+            
+        
+            
+            <li class="has-submenu">
+                <a href="#.html" target="_self">
+                    Applications
+                </a>
+                <ul class="left-submenu move-right">
+                    <li class="back"><a href="#">Back</a></li>
+                    <dl>
+                        <li class="familytitle">Applications</li>
+                        <dl>
+                            <li><a href="/content/st_com/en/applications/appliances-and-industrial-tools.html">Appliances and Industrial Tools</a></li>
+                        
+                            <li><a href="/content/st_com/en/applications/automation.html">Automation</a></li>
+                        
+                            <li><a href="/content/st_com/en/applications/automotive-and-transportation.html">Automotive and Transportation</a></li>
+                        
+                            <li><a href="/content/st_com/en/applications/connectivity.html">Connectivity</a></li>
+                        
+                            <li><a href="/content/st_com/en/applications/energy-generation-and-distribution.html">Energy generation and distribution</a></li>
+                        
+                            <li><a href="/content/st_com/en/applications/internet-of-things-iot.html">Internet of Things (IoT)</a></li>
+                        
+                            <li><a href="/content/st_com/en/applications/led-and-general-lighting.html">LED and General Lighting</a></li>
+                        
+                            <li><a href="/content/st_com/en/applications/medical-and-healthcare.html">Medical and Healthcare</a></li>
+                        
+                            <li><a href="/content/st_com/en/applications/motor-control.html">Motor Control</a></li>
+                        
+                            <li><a href="/content/st_com/en/applications/personal-and-multimedia.html">Personal and Multimedia</a></li>
+                        
+                            <li><a href="/content/st_com/en/applications/power-management.html">Power Management</a></li>
+                        </dl>
+                    </dl>
+                </ul>
+            </li>
+            
+        
+            
+            <li class="has-submenu">
+                <a href="#.html" target="_self">
+                    Tools &amp; Software
+                </a>
+                <ul class="left-submenu move-right">
+                    <li class="back"><a href="#">Back</a></li>
+                    <dl>
+                        <li class="familytitle">Evaluation Tools</li>
+                        <dl>
+                            <li><a href="/content/st_com/en/products/evaluation-tools/product-evaluation-tools.html">Product  Evaluation Tools</a></li>
+                        
+                            <li><a href="/content/st_com/en/products/evaluation-tools/solution-evaluation-tools.html">Solution Evaluation Tools</a></li>
+                        </dl>
+                    
+                        <li class="familytitle">Development Tools</li>
+                        <dl>
+                            <li><a href="/content/st_com/en/products/development-tools/hardware-development-tools.html">Hardware Development Tools</a></li>
+                        
+                            <li><a href="/content/st_com/en/products/development-tools/software-development-tools.html">Software Development Tools</a></li>
+                        </dl>
+                    
+                        <li class="familytitle">Embedded Software</li>
+                        <dl>
+                            <li><a href="/content/st_com/en/products/embedded-software/mcus-embedded-software.html">MCUs Embedded Software</a></li>
+                        
+                            <li><a href="/content/st_com/en/products/embedded-software/mems-and-sensors-software.html">MEMS and Sensors Software</a></li>
+                        
+                            <li><a href="/content/st_com/en/products/embedded-software/wireless-connectivity-software.html">Wireless Connectivity Software</a></li>
+                        </dl>
+                    
+                        <li class="familytitle">Ecosystems</li>
+                        <dl>
+                            <li><a href="/content/st_com/en/products/ecosystems/open-software-expansion.html">Open Software Expansion</a></li>
+                        
+                            <li><a href="/content/st_com/en/products/ecosystems/stm32-open-development-environment.html">STM32 Open Development Environment</a></li>
+                        </dl>
+                    </dl>
+                </ul>
+            </li>
+            
+        
+            
+            <li class="has-submenu">
+                <a href="#.html" target="_self">
+                    Support &amp; Community
+                </a>
+                <ul class="left-submenu move-right">
+                    <li class="back"><a href="#">Back</a></li>
+                    <dl>
+                        <li class="familytitle">Support</li>
+                        <dl>
+                            <li><a href="/content/st_com/en/support/third-party/design-consultants-for-analog-power-designs.html">Analog/Power Design Consultants</a></li>
+                        
+                            <li><a href="/content/st_com/en/contact-us.html">Contacts</a></li>
+                        
+                            <li><a href="https://my.st.com/public/Faq/default.aspx">FAQ</a></li>
+                        
+                            <li><a href="/content/st_com/en/support/learning/learning_home.html">Learning</a></li>
+                        
+                            <li><a href="/content/st_com/en/support/resources/product-longevity.html">Longevity Commitment</a></li>
+                        
+                            <li><a href="/content/st_com/en/support/third-party/design-consultants-for-mcus.html">MCU Design Consultants</a></li>
+                        
+                            <li><a href="/content/st_com/en/support/quality-and-reliability.html">Quality &amp; Reliability</a></li>
+                        
+                            <li><a href="/content/st_com/en/support/online-support.html">Online Support</a></li>
+                        
+                            <li><a href="/content/st_com/en/support/third-party/third-parties-for-dual-interface-eeproms.html">Third Parties for EEPROM Programmers</a></li>
+                        
+                            <li><a href="/content/st_com/en/support/third-party/third-parties-for-mcu-tools.html">Third Parties for MCU tools</a></li>
+                        
+                            <li><a href="/content/st_com/en/support/third-party/third-parties-for-spc-56-automotive-mcus.html">Third Parties for SPC 5x Automotive MCUs</a></li>
+                        
+                            <li><a href="/content/st_com/en/support/third-party/third-party-training.html">Third Party Training Partners for MCUs</a></li>
+                        
+                            <li><a href="/content/st_com/en/support/learning/video-page.html">Video Center</a></li>
+                        </dl>
+                    
+                        <li class="familytitle">Communites</li>
+                        <dl>
+                            <li><a href="https://my.st.com/public/STe2ecommunities/default.aspx">ST e2e Communities</a></li>
+                        </dl>
+                    </dl>
+                </ul>
+            </li>
+            
+        
+            
+            <li class="has-submenu">
+                <a href="#.html" target="_self">
+                    Sample &amp; Buy
+                </a>
+                <ul class="left-submenu move-right">
+                    <li class="back"><a href="#">Back</a></li>
+                    <dl>
+                        <li class="familytitle">Sample &amp; Buy</li>
+                        <dl>
+                            <li><a href="/content/st_com/en/contact-us.html">Contact our Sales Force &amp; Distribution</a></li>
+                        
+                            <li><a href="/content/st_com/en/sample_and_buy/sample-and-buy/buy-from-estore.html">Buy Direct</a></li>
+                        
+                            <li><a href="/content/st_com/en/sample_and_buy/sample-and-buy/buy-from-estore.html#samples-scroll">Get Samples</a></li>
+                        </dl>
+                    </dl>
+                </ul>
+            </li>
+            
+        
+            
+            <li class="has-submenu">
+                <a href="/content/st_com/en/about/st_company_information/who-we-are.html" target="_self">
+                    About ST
+                </a>
+                <ul class="left-submenu move-right">
+                    <li class="back"><a href="#">Back</a></li>
+                    <dl>
+                        <li class="familytitle">Company Information</li>
+                        <dl>
+                            <li><a href="/content/st_com/en/about/st_company_information/who-we-are.html">Who We Are</a></li>
+                        
+                            <li><a href="/content/st_com/en/about/st_company_information/st_executive_officers.html">Management</a></li>
+                        
+                            <li><a href="http://blog.st.com">Blog</a></li>
+                        </dl>
+                    
+                        <li class="familytitle">Media Center</li>
+                        <dl>
+                            <li><a href="/content/st_com/en/about/media-center/subscribe.html">Media Subscription</a></li>
+                        
+                            <li><a href="/content/st_com/en/about/media-center/media_relations_contact.html">Media Contacts</a></li>
+                        
+                            <li><a href="/content/st_com/en/about/media-center/backgrounders.html">Backgrounders</a></li>
+                        
+                            <li><a href="/content/st_com/en/about/media-center/press-and-news.html/page=1">Newsroom</a></li>
+                        </dl>
+                    
+                        <li class="familytitle">Investor Relations</li>
+                        <dl>
+                            <li><a href="http://investors.st.com/">Investor Relations Home</a></li>
+                        
+                            <li><a href="http://investors.st.com/phoenix.zhtml?c=111941&p=irol-news&nyo=0">Corporate News</a></li>
+                        
+                            <li><a href="http://investors.st.com/phoenix.zhtml?c=111941&p=irol-reportsAnnual">Annual/Semi-Annual Reports</a></li>
+                        
+                            <li><a href="http://investors.st.com/phoenix.zhtml?c=111941&p=irol-reportsOther">Quarterly Results</a></li>
+                        
+                            <li><a href="http://investors.st.com/phoenix.zhtml?c=111941&p=irol-calendarPast">Calendar &amp; Presentations</a></li>
+                        
+                            <li><a href="http://investors.st.com/phoenix.zhtml?c=111941&p=proxynew">General Meeting of Shareholders</a></li>
+                        
+                            <li><a href="http://investors.st.com/phoenix.zhtml?c=111941&p=irol-stockQuote">Stock Information</a></li>
+                        
+                            <li><a href="http://investors.st.com/phoenix.zhtml?c=111941&p=irol-dividends">Dividends</a></li>
+                        
+                            <li><a href="http://investors.st.com/phoenix.zhtml?c=111941&p=irol-sec">SEC Filings</a></li>
+                        
+                            <li><a href="http://investors.st.com/phoenix.zhtml?c=111941&p=irol-investorKit">Investor Kit</a></li>
+                        
+                            <li><a href="http://investors.st.com/phoenix.zhtml?c=111941&p=irol-analysts">Institutional Coverage</a></li>
+                        
+                            <li><a href="http://investors.st.com/phoenix.zhtml?c=111941&p=irol-contact">Contact Information</a></li>
+                        
+                            <li><a href="http://investors.st.com/phoenix.zhtml?c=111941&p=irol-alerts">Email Alerts</a></li>
+                        
+                            <li><a href="http://investors.st.com/phoenix.zhtml?c=111941&p=irol-infoReq">Information Request</a></li>
+                        
+                            <li><a href="http://investors.st.com/phoenix.zhtml?c=111941&p=irol-govHighlights">Corporate Governance</a></li>
+                        </dl>
+                    
+                        <li class="familytitle">Events</li>
+                        <dl>
+                            <li><a href="/content/st_com/en/about/events/upcoming-events-and-technical-seminars.html">Upcoming Events &amp; Technical Seminars</a></li>
+                        </dl>
+                    
+                        <li class="familytitle">Innovation &amp; Technology</li>
+                        <dl>
+                            <li><a href="/content/st_com/en/about/innovation---technology/innovation---technology.html">Innovation &amp; Technology</a></li>
+                        
+                            <li><a href="/content/st_com/en/about/innovation---technology/BCD.html">BCD</a></li>
+                        
+                            <li><a href="/content/st_com/en/about/innovation---technology/BiCMOS.html">BiCMOS</a></li>
+                        
+                            <li><a href="/content/st_com/en/about/innovation---technology/FD-SOI.html">FD-SOI</a></li>
+                        
+                            <li><a href="/content/st_com/en/about/innovation---technology/H9SOIFEM.html">H9SOIFEM</a></li>
+                        
+                            <li><a href="/content/st_com/en/about/innovation---technology/mems.html">MEMS</a></li>
+                        
+                            <li><a href="/content/st_com/en/about/innovation---technology/imaging.html">Imaging</a></li>
+                        </dl>
+                    
+                        <li class="familytitle">Sustainability</li>
+                        <dl>
+                            <li><a href="/content/st_com/en/about/st_approach_to_sustainability.html">ST Approach to Sustainability</a></li>
+                        
+                            <li><a href="/content/st_com/en/about/st_approach_to_sustainability/sustainability-strategy.html">Sustainability Strategy</a></li>
+                        
+                            <li><a href="/content/st_com/en/about/st_approach_to_sustainability/sustainability_governance.html">Sustainability Governance</a></li>
+                        
+                            <li><a href="/content/st_com/en/about/st_approach_to_sustainability/stakeholder-engagement.html">Stakeholder Engagement</a></li>
+                        
+                            <li><a href="/content/st_com/en/about/st_approach_to_sustainability/sustainability-rating-and-ranking.html">Sustainability Rating and Ranking</a></li>
+                        
+                            <li><a href="/content/st_com/en/about/st_approach_to_sustainability/involvement-in-industrial-and-international-organizations.html">Involvement in Industrial and International Organizations</a></li>
+                        
+                            <li><a href="/content/st_com/en/about/st_approach_to_sustainability/sustainability-reports.html">Sustainability Reports</a></li>
+                        </dl>
+                    
+                        <li class="familytitle">Customer Satisfaction</li>
+                        <dl>
+                            <li><a href="/content/st_com/en/about/customer-satifaction/customer-satisfaction.html">Committment to Customer Satisfaction</a></li>
+                        
+                            <li><a href="/content/st_com/en/about/customer-satifaction/five-areas-of-excellence.html">Five Areas of Excellence</a></li>
+                        
+                            <li><a href="/content/st_com/en/about/customer-satifaction/customer-satisfaction-measurement.html">Customer Satisfaction Measurement</a></li>
+                        </dl>
+                    
+                        <li class="familytitle">Careers at ST</li>
+                        <dl>
+                            <li><a href="/content/st_com/en/about/careers/careers.html">Job Search</a></li>
+                        
+                            <li><a href="/content/st_com/en/about/careers/intern_thesis.html">Internships &amp; Thesis</a></li>
+                        
+                            <li><a href="/content/st_com/en/about/careers/your_career.html">Your Career at ST</a></li>
+                        
+                            <li><a href="/content/st_com/en/about/careers/st-locations.html">ST Locations</a></li>
+                        
+                            <li><a href="/content/st_com/en/about/careers/this_is_st.html">Our Mission &amp; Vision</a></li>
+                        
+                            <li><a href="/content/st_com/en/about/careers/our_culture_values.html">Our Culture &amp; Values</a></li>
+                        </dl>
+                    </dl>
+                </ul>
+            </li>
+            
+        
+            
+            
+            
+        
+            
+            
+            
+        
+            
+            
+            
+        
+            
+            
+            
+        
+            
+            
+            
+        
+            
+            
+            
+        
+            
+            
+            
+        
+            
+            
+            
+        
+            
+            
+            
+        
+            
+            
+            
+        
+            
+            
+            
+        
+            
+            
+            
+        
+            
+            
+            
+        
+            
+            
+            
+        
+            
+            
+            
+        
+            
+            
+            
+        
+            
+            
+            
+        
+            
+            
+            <li>
+                <a href="/content/st_com/en/contact-us.html" target="_self">
+                    Contacts
+                </a>
+            </li>
+        
+            
+            
+            
+        
+            
+            
+            
+        
+            
+            
+            
+        
+            
+            
+            
+        
+            
+            
+            
+        
+            
+            
+            
+        
+            
+            
+            
+        
+            
+            
+            
+        
+            
+            
+            
+        
+            
+            
+            
+        
+            
+            
+            
+        
+            
+            
+            
+        
+            
+            
+            
+        
+            
+            
+            
+        
+            
+            
+            
+        
+            
+            
+            
+        
+            
+            
+            
+        
+            
+            
+            
+        
+            
+            
+            
+        
+            
+            
+            
+        
+            
+            
+            
+        
+            
+            
+            
+        
+            
+            
+            
+        
+            
+            
+            
+        
+            
+            
+            
+        
+            
+            
+            
+        
+            
+            
+            
+        
+            
+            
+            
+        </ul>
+    </aside>
+
+
+
+
+<div id="cookie-panel" hidden>
+    
+        <div class="cookie-panel">
+                <span class="cookie-panel-content">
+                    This website uses cookies and similar technologies for functionality, analytics, and advertising purposes as described in ST Cookies Policy. To see what cookies we serve and set your preferences, please read the ST Cookies Policy. By continuing your visit on our website, you consent to our cookies in accordance with ST Cookies Policy.</a>
+                </span>
+            <br/>
+            <a class="close-cookie-panel">OK</a>
+            <a href="/content/st_com/en/common/cookies-policy.html" target="_blank">
+                READ MORE
+            </a>
+        </div>
+    
+</div>
+
+<style>
+    .cookie-panel {
+        background: #39a9db;
+        padding: 5px;
+        text-align: center;
+        color: #fff;
+    }
+
+    .cookie-panel a {
+        color: #002052;
+        padding-left: 2%;
+    }
+
+    .cookie-panel a:hover {
+        color: #0078a0 !important;
+    }
+</style>
+
+<div id="header" class="nav-layout-2">
+    <div class="row">
+        
+
+        
+            <div class="large-2 column large-text-left medium-text-center small-text-center">
+                <a href="/content/st_com/en.html">
+    <img src="/etc/clientlibs/st-site/media/app/images/stlogo.png" alt="STMicro">
+</a>
+            </div>
+            <div class="large-1 inner-nav-link column hide-for-print">
+                <a id="menu-btn" class="show-for-large-up" href="#"><i class="fa fa-bars"></i> Menu</a>
+                
+    <ul id="sample-menu-3" class="sf-menu sf-vertical hide">
+        
+    
+        
+    
+        
+    
+        <li>
+            <a href="#.html" target="_self">
+                Products
+            </a>
+            <ul>
+                
+                <li>
+                    <div class="row">
+                        <div class="column large-12">
+                            
+                                <a href="#" class="right"><i class="fa fa-times"></i></a>
+                            
+                            
+                            
+                                <p class="text-info"><strong>Sensors, Analog, Power and Automotive Products</strong></p>
+                            
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="column large-6">
+                            
+                                <a href="/content/st_com/en/products/aerospace-and-defense-products.html">Aerospace and Defense Products</a>
+                                <br/>
+                            
+                        
+                            
+                                <a href="/content/st_com/en/products/amplifiers-and-comparators.html">Amplifiers and Comparators </a>
+                                <br/>
+                            
+                        
+                            
+                                <a href="/content/st_com/en/products/audio-ics.html">Audio ICs</a>
+                                <br/>
+                            
+                        
+                            
+                                <a href="/content/st_com/en/products/automotive-analog-power-ics.html">Automotive Analog &amp; Power ICs</a>
+                                <br/>
+                            
+                        
+                            
+                                <a href="/content/st_com/en/products/automotive-infotainment-and-telematics.html">Automotive Infotainment and Telematics</a>
+                                <br/>
+                            
+                        
+                            
+                                <a href="/content/st_com/en/products/automotive-logic-ics.html">Automotive Logic ICs</a>
+                                <br/>
+                            
+                        
+                            
+                                <a href="/content/st_com/en/products/automotive-microcontrollers.html">Automotive Microcontrollers</a>
+                                <br/>
+                            
+                        
+                            
+                                <a href="/content/st_com/en/products/clocks-and-timers.html">Clocks and Timers</a>
+                                <br/>
+                            
+                        
+                            
+                                <a href="/content/st_com/en/products/data-converters.html">Data Converters </a>
+                                <br/>
+                            
+                        
+                            
+                                <a href="/content/st_com/en/products/diodes-and-rectifiers.html">Diodes and Rectifiers</a>
+                                <br/>
+                            
+                        
+                            
+                                <a href="/content/st_com/en/products/emi-filtering-and-signal-conditioning.html">EMI Filtering and Signal Conditioning</a>
+                                <br/>
+                            
+                        
+                            
+                                <a href="/content/st_com/en/products/interfaces-and-transceivers.html">Interfaces and Transceivers</a>
+                                <br/>
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                        </div>
+                        <div class="column large-6">
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                                <a href="/content/st_com/en/products/mems-and-sensors.html">MEMS and Sensors</a>
+                                <br/>
+                            
+                        
+                            
+                                <a href="/content/st_com/en/products/motor-drivers.html">Motor Drivers</a>
+                                <br/>
+                            
+                        
+                            
+                                <a href="/content/st_com/en/products/power-management.html">Power Management</a>
+                                <br/>
+                            
+                        
+                            
+                                <a href="/content/st_com/en/products/power-modules.html">Power Modules</a>
+                                <br/>
+                            
+                        
+                            
+                                <a href="/content/st_com/en/products/power-transistors.html">Power Transistors</a>
+                                <br/>
+                            
+                        
+                            
+                                <a href="/content/st_com/en/products/protection-devices.html">Protection Devices</a>
+                                <br/>
+                            
+                        
+                            
+                                <a href="/content/st_com/en/products/radio-frequency-transistors.html">Radio Frequency Transistors</a>
+                                <br/>
+                            
+                        
+                            
+                                <a href="/content/st_com/en/products/reset-and-supervisor-ics.html">Reset and Supervisor ICs</a>
+                                <br/>
+                            
+                        
+                            
+                                <a href="/content/st_com/en/products/switches-and-multiplexers.html">Switches and Multiplexers</a>
+                                <br/>
+                            
+                        
+                            
+                                <a href="/content/st_com/en/products/thyristors-scr-and-ac-switches.html">Thyristors (SCR) and AC Switches</a>
+                                <br/>
+                            
+                        
+                            
+                                <a href="/content/st_com/en/products/wireless-connectivity.html">Wireless Connectivity </a>
+                                <br/>
+                            
+                        </div>
+                    </div>
+                    <br/>
+                
+                    <div class="row">
+                        <div class="column large-12">
+                            
+                            
+                            
+                                <p class="text-info"><strong>Microcontrollers, Memories, Imaging and Digital ICs</strong></p>
+                            
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="column large-6">
+                            
+                                <a href="/content/st_com/en/products/digital-set-top-box-ics.html">Digital Set-Top Box ICs</a>
+                                <br/>
+                            
+                        
+                            
+                                <a href="/content/st_com/en/products/display-controllers.html">Display Controllers</a>
+                                <br/>
+                            
+                        
+                            
+                                <a href="/content/st_com/en/products/imaging-and-photonics-solutions.html">Imaging and Photonics Solutions</a>
+                                <br/>
+                            
+                        
+                            
+                                <a href="/content/st_com/en/products/memories.html">Memories</a>
+                                <br/>
+                            
+                        
+                            
+                                <a href="/content/st_com/en/products/microcontrollers.html">Microcontrollers</a>
+                                <br/>
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                        </div>
+                        <div class="column large-6">
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                                <a href="/content/st_com/en/products/nfc.html">NFC</a>
+                                <br/>
+                            
+                        
+                            
+                                <a href="/content/st_com/en/products/spear-embedded-microprocessors.html">SPEAr Embedded Microprocessors</a>
+                                <br/>
+                            
+                        
+                            
+                                <a href="/content/st_com/en/products/secure-mcus.html">Secure MCUs</a>
+                                <br/>
+                            
+                        </div>
+                    </div>
+                    <br/>
+                </li>
+            </ul>
+        </li>
+    
+        <li>
+            <a href="#.html" target="_self">
+                Applications
+            </a>
+            <ul>
+                
+                <li>
+                    <div class="row">
+                        <div class="column large-12">
+                            
+                                <a href="#" class="right"><i class="fa fa-times"></i></a>
+                            
+                            
+                            
+                                <p class="text-info"><strong>Applications</strong></p>
+                            
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="column large-6">
+                            
+                                <a href="/content/st_com/en/applications/appliances-and-industrial-tools.html">Appliances and Industrial Tools</a>
+                                <br/>
+                            
+                        
+                            
+                                <a href="/content/st_com/en/applications/automation.html">Automation</a>
+                                <br/>
+                            
+                        
+                            
+                                <a href="/content/st_com/en/applications/automotive-and-transportation.html">Automotive and Transportation</a>
+                                <br/>
+                            
+                        
+                            
+                                <a href="/content/st_com/en/applications/connectivity.html">Connectivity</a>
+                                <br/>
+                            
+                        
+                            
+                                <a href="/content/st_com/en/applications/energy-generation-and-distribution.html">Energy generation and distribution</a>
+                                <br/>
+                            
+                        
+                            
+                                <a href="/content/st_com/en/applications/internet-of-things-iot.html">Internet of Things (IoT)</a>
+                                <br/>
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                        </div>
+                        <div class="column large-6">
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                                <a href="/content/st_com/en/applications/led-and-general-lighting.html">LED and General Lighting</a>
+                                <br/>
+                            
+                        
+                            
+                                <a href="/content/st_com/en/applications/medical-and-healthcare.html">Medical and Healthcare</a>
+                                <br/>
+                            
+                        
+                            
+                                <a href="/content/st_com/en/applications/motor-control.html">Motor Control</a>
+                                <br/>
+                            
+                        
+                            
+                                <a href="/content/st_com/en/applications/personal-and-multimedia.html">Personal and Multimedia</a>
+                                <br/>
+                            
+                        
+                            
+                                <a href="/content/st_com/en/applications/power-management.html">Power Management</a>
+                                <br/>
+                            
+                        </div>
+                    </div>
+                    <br/>
+                </li>
+            </ul>
+        </li>
+    
+        <li>
+            <a href="#.html" target="_self">
+                Tools &amp; Software
+            </a>
+            <ul>
+                
+                
+                <li>
+                    <div class="row">
+                        <div class="column large-12">
+                            
+                                <a href="#" class="right"><i class="fa fa-times"></i></a>
+                            
+                            
+                                <p class="text-info"><a href="/content/st_com/en/products/evaluation-tools.html"><strong>Evaluation Tools</strong></a></p>
+                            
+                            
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="column large-6">
+                            
+                                <a href="/content/st_com/en/products/evaluation-tools/product-evaluation-tools.html">Product  Evaluation Tools</a>
+                                <br/>
+                            
+                        
+                            
+                                <a href="/content/st_com/en/products/evaluation-tools/solution-evaluation-tools.html">Solution Evaluation Tools</a>
+                                <br/>
+                            
+                        </div>
+                        <div class="column large-6">
+                            
+                        
+                            
+                        </div>
+                    </div>
+                    <br/>
+                
+                    <div class="row">
+                        <div class="column large-12">
+                            
+                            
+                                <p class="text-info"><a href="/content/st_com/en/products/development-tools.html"><strong>Development Tools</strong></a></p>
+                            
+                            
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="column large-6">
+                            
+                                <a href="/content/st_com/en/products/development-tools/hardware-development-tools.html">Hardware Development Tools</a>
+                                <br/>
+                            
+                        
+                            
+                                <a href="/content/st_com/en/products/development-tools/software-development-tools.html">Software Development Tools</a>
+                                <br/>
+                            
+                        </div>
+                        <div class="column large-6">
+                            
+                        
+                            
+                        </div>
+                    </div>
+                    <br/>
+                
+                    <div class="row">
+                        <div class="column large-12">
+                            
+                            
+                                <p class="text-info"><a href="/content/st_com/en/products/embedded-software.html"><strong>Embedded Software</strong></a></p>
+                            
+                            
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="column large-6">
+                            
+                                <a href="/content/st_com/en/products/embedded-software/mcus-embedded-software.html">MCUs Embedded Software</a>
+                                <br/>
+                            
+                        
+                            
+                                <a href="/content/st_com/en/products/embedded-software/mems-and-sensors-software.html">MEMS and Sensors Software</a>
+                                <br/>
+                            
+                        
+                            
+                        </div>
+                        <div class="column large-6">
+                            
+                        
+                            
+                        
+                            
+                                <a href="/content/st_com/en/products/embedded-software/wireless-connectivity-software.html">Wireless Connectivity Software</a>
+                                <br/>
+                            
+                        </div>
+                    </div>
+                    <br/>
+                
+                    <div class="row">
+                        <div class="column large-12">
+                            
+                            
+                                <p class="text-info"><a href="/content/st_com/en/products/ecosystems.html"><strong>Ecosystems</strong></a></p>
+                            
+                            
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="column large-6">
+                            
+                                <a href="/content/st_com/en/products/ecosystems/open-software-expansion.html">Open Software Expansion</a>
+                                <br/>
+                            
+                        
+                            
+                                <a href="/content/st_com/en/products/ecosystems/stm32-open-development-environment.html">STM32 Open Development Environment</a>
+                                <br/>
+                            
+                        </div>
+                        <div class="column large-6">
+                            
+                        
+                            
+                        </div>
+                    </div>
+                    <br/>
+                </li>
+            </ul>
+        </li>
+    
+        <li>
+            <a href="#.html" target="_self">
+                Support &amp; Community
+            </a>
+            <ul>
+                
+                <li>
+                    <div class="row">
+                        <div class="column large-12">
+                            
+                                <a href="#" class="right"><i class="fa fa-times"></i></a>
+                            
+                            
+                            
+                                <p class="text-info"><strong>Support</strong></p>
+                            
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="column large-6">
+                            
+                                <a href="/content/st_com/en/support/third-party/design-consultants-for-analog-power-designs.html">Analog/Power Design Consultants</a>
+                                <br/>
+                            
+                        
+                            
+                                <a href="/content/st_com/en/contact-us.html">Contacts</a>
+                                <br/>
+                            
+                        
+                            
+                                <a href="https://my.st.com/public/Faq/default.aspx">FAQ</a>
+                                <br/>
+                            
+                        
+                            
+                                <a href="/content/st_com/en/support/learning/learning_home.html">Learning</a>
+                                <br/>
+                            
+                        
+                            
+                                <a href="/content/st_com/en/support/resources/product-longevity.html">Longevity Commitment</a>
+                                <br/>
+                            
+                        
+                            
+                                <a href="/content/st_com/en/support/third-party/design-consultants-for-mcus.html">MCU Design Consultants</a>
+                                <br/>
+                            
+                        
+                            
+                                <a href="/content/st_com/en/support/quality-and-reliability.html">Quality &amp; Reliability</a>
+                                <br/>
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                        </div>
+                        <div class="column large-6">
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                                <a href="/content/st_com/en/support/online-support.html">Online Support</a>
+                                <br/>
+                            
+                        
+                            
+                                <a href="/content/st_com/en/support/third-party/third-parties-for-dual-interface-eeproms.html">Third Parties for EEPROM Programmers</a>
+                                <br/>
+                            
+                        
+                            
+                                <a href="/content/st_com/en/support/third-party/third-parties-for-mcu-tools.html">Third Parties for MCU tools</a>
+                                <br/>
+                            
+                        
+                            
+                                <a href="/content/st_com/en/support/third-party/third-parties-for-spc-56-automotive-mcus.html">Third Parties for SPC 5x Automotive MCUs</a>
+                                <br/>
+                            
+                        
+                            
+                                <a href="/content/st_com/en/support/third-party/third-party-training.html">Third Party Training Partners for MCUs</a>
+                                <br/>
+                            
+                        
+                            
+                                <a href="/content/st_com/en/support/learning/video-page.html">Video Center</a>
+                                <br/>
+                            
+                        </div>
+                    </div>
+                    <br/>
+                
+                    <div class="row">
+                        <div class="column large-12">
+                            
+                            
+                            
+                                <p class="text-info"><strong>Communites</strong></p>
+                            
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="column large-6">
+                            
+                                <a href="https://my.st.com/public/STe2ecommunities/default.aspx">ST e2e Communities</a>
+                                <br/>
+                            
+                        </div>
+                        <div class="column large-6">
+                            
+                        </div>
+                    </div>
+                    <br/>
+                </li>
+            </ul>
+        </li>
+    
+        <li>
+            <a href="#.html" target="_self">
+                Sample &amp; Buy
+            </a>
+            <ul>
+                
+                <li>
+                    <div class="row">
+                        <div class="column large-12">
+                            
+                                <a href="#" class="right"><i class="fa fa-times"></i></a>
+                            
+                            
+                            
+                                <p class="text-info"><strong>Sample &amp; Buy</strong></p>
+                            
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="column large-6">
+                            
+                                <a href="/content/st_com/en/contact-us.html">Contact our Sales Force &amp; Distribution</a>
+                                <br/>
+                            
+                        
+                            
+                                <a href="/content/st_com/en/sample_and_buy/sample-and-buy/buy-from-estore.html">Buy Direct</a>
+                                <br/>
+                            
+                        
+                            
+                        </div>
+                        <div class="column large-6">
+                            
+                        
+                            
+                        
+                            
+                                <a href="/content/st_com/en/sample_and_buy/sample-and-buy/buy-from-estore.html#samples-scroll">Get Samples</a>
+                                <br/>
+                            
+                        </div>
+                    </div>
+                    <br/>
+                </li>
+            </ul>
+        </li>
+    
+        <li>
+            <a href="/content/st_com/en/about/st_company_information/who-we-are.html" target="_self">
+                About ST
+            </a>
+            <ul>
+                
+                <li>
+                    <div class="row">
+                        <div class="column large-12">
+                            
+                                <a href="#" class="right"><i class="fa fa-times"></i></a>
+                            
+                            
+                            
+                                <p class="text-info"><strong>Company Information</strong></p>
+                            
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="column large-6">
+                            
+                                <a href="/content/st_com/en/about/st_company_information/who-we-are.html">Who We Are</a>
+                                <br/>
+                            
+                        
+                            
+                                <a href="/content/st_com/en/about/st_company_information/st_executive_officers.html">Management</a>
+                                <br/>
+                            
+                        
+                            
+                        </div>
+                        <div class="column large-6">
+                            
+                        
+                            
+                        
+                            
+                                <a href="http://blog.st.com">Blog</a>
+                                <br/>
+                            
+                        </div>
+                    </div>
+                    <br/>
+                
+                    <div class="row">
+                        <div class="column large-12">
+                            
+                            
+                            
+                                <p class="text-info"><strong>Media Center</strong></p>
+                            
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="column large-6">
+                            
+                                <a href="/content/st_com/en/about/media-center/subscribe.html">Media Subscription</a>
+                                <br/>
+                            
+                        
+                            
+                                <a href="/content/st_com/en/about/media-center/media_relations_contact.html">Media Contacts</a>
+                                <br/>
+                            
+                        
+                            
+                                <a href="/content/st_com/en/about/media-center/backgrounders.html">Backgrounders</a>
+                                <br/>
+                            
+                        
+                            
+                        </div>
+                        <div class="column large-6">
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                                <a href="/content/st_com/en/about/media-center/press-and-news.html/page=1">Newsroom</a>
+                                <br/>
+                            
+                        </div>
+                    </div>
+                    <br/>
+                
+                    <div class="row">
+                        <div class="column large-12">
+                            
+                            
+                            
+                                <p class="text-info"><strong>Investor Relations</strong></p>
+                            
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="column large-6">
+                            
+                                <a href="http://investors.st.com/">Investor Relations Home</a>
+                                <br/>
+                            
+                        
+                            
+                                <a href="http://investors.st.com/phoenix.zhtml?c=111941&p=irol-news&nyo=0">Corporate News</a>
+                                <br/>
+                            
+                        
+                            
+                                <a href="http://investors.st.com/phoenix.zhtml?c=111941&p=irol-reportsAnnual">Annual/Semi-Annual Reports</a>
+                                <br/>
+                            
+                        
+                            
+                                <a href="http://investors.st.com/phoenix.zhtml?c=111941&p=irol-reportsOther">Quarterly Results</a>
+                                <br/>
+                            
+                        
+                            
+                                <a href="http://investors.st.com/phoenix.zhtml?c=111941&p=irol-calendarPast">Calendar &amp; Presentations</a>
+                                <br/>
+                            
+                        
+                            
+                                <a href="http://investors.st.com/phoenix.zhtml?c=111941&p=proxynew">General Meeting of Shareholders</a>
+                                <br/>
+                            
+                        
+                            
+                                <a href="http://investors.st.com/phoenix.zhtml?c=111941&p=irol-stockQuote">Stock Information</a>
+                                <br/>
+                            
+                        
+                            
+                                <a href="http://investors.st.com/phoenix.zhtml?c=111941&p=irol-dividends">Dividends</a>
+                                <br/>
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                        </div>
+                        <div class="column large-6">
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                                <a href="http://investors.st.com/phoenix.zhtml?c=111941&p=irol-sec">SEC Filings</a>
+                                <br/>
+                            
+                        
+                            
+                                <a href="http://investors.st.com/phoenix.zhtml?c=111941&p=irol-investorKit">Investor Kit</a>
+                                <br/>
+                            
+                        
+                            
+                                <a href="http://investors.st.com/phoenix.zhtml?c=111941&p=irol-analysts">Institutional Coverage</a>
+                                <br/>
+                            
+                        
+                            
+                                <a href="http://investors.st.com/phoenix.zhtml?c=111941&p=irol-contact">Contact Information</a>
+                                <br/>
+                            
+                        
+                            
+                                <a href="http://investors.st.com/phoenix.zhtml?c=111941&p=irol-alerts">Email Alerts</a>
+                                <br/>
+                            
+                        
+                            
+                                <a href="http://investors.st.com/phoenix.zhtml?c=111941&p=irol-infoReq">Information Request</a>
+                                <br/>
+                            
+                        
+                            
+                                <a href="http://investors.st.com/phoenix.zhtml?c=111941&p=irol-govHighlights">Corporate Governance</a>
+                                <br/>
+                            
+                        </div>
+                    </div>
+                    <br/>
+                
+                    <div class="row">
+                        <div class="column large-12">
+                            
+                            
+                            
+                                <p class="text-info"><strong>Events</strong></p>
+                            
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="column large-6">
+                            
+                                <a href="/content/st_com/en/about/events/upcoming-events-and-technical-seminars.html">Upcoming Events &amp; Technical Seminars</a>
+                                <br/>
+                            
+                        </div>
+                        <div class="column large-6">
+                            
+                        </div>
+                    </div>
+                    <br/>
+                
+                    <div class="row">
+                        <div class="column large-12">
+                            
+                            
+                            
+                                <p class="text-info"><strong>Innovation &amp; Technology</strong></p>
+                            
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="column large-6">
+                            
+                                <a href="/content/st_com/en/about/innovation---technology/innovation---technology.html">Innovation &amp; Technology</a>
+                                <br/>
+                            
+                        
+                            
+                                <a href="/content/st_com/en/about/innovation---technology/BCD.html">BCD</a>
+                                <br/>
+                            
+                        
+                            
+                                <a href="/content/st_com/en/about/innovation---technology/BiCMOS.html">BiCMOS</a>
+                                <br/>
+                            
+                        
+                            
+                                <a href="/content/st_com/en/about/innovation---technology/FD-SOI.html">FD-SOI</a>
+                                <br/>
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                        </div>
+                        <div class="column large-6">
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                                <a href="/content/st_com/en/about/innovation---technology/H9SOIFEM.html">H9SOIFEM</a>
+                                <br/>
+                            
+                        
+                            
+                                <a href="/content/st_com/en/about/innovation---technology/mems.html">MEMS</a>
+                                <br/>
+                            
+                        
+                            
+                                <a href="/content/st_com/en/about/innovation---technology/imaging.html">Imaging</a>
+                                <br/>
+                            
+                        </div>
+                    </div>
+                    <br/>
+                
+                    <div class="row">
+                        <div class="column large-12">
+                            
+                            
+                            
+                                <p class="text-info"><strong>Sustainability</strong></p>
+                            
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="column large-6">
+                            
+                                <a href="/content/st_com/en/about/st_approach_to_sustainability.html">ST Approach to Sustainability</a>
+                                <br/>
+                            
+                        
+                            
+                                <a href="/content/st_com/en/about/st_approach_to_sustainability/sustainability-strategy.html">Sustainability Strategy</a>
+                                <br/>
+                            
+                        
+                            
+                                <a href="/content/st_com/en/about/st_approach_to_sustainability/sustainability_governance.html">Sustainability Governance</a>
+                                <br/>
+                            
+                        
+                            
+                                <a href="/content/st_com/en/about/st_approach_to_sustainability/stakeholder-engagement.html">Stakeholder Engagement</a>
+                                <br/>
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                        </div>
+                        <div class="column large-6">
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                                <a href="/content/st_com/en/about/st_approach_to_sustainability/sustainability-rating-and-ranking.html">Sustainability Rating and Ranking</a>
+                                <br/>
+                            
+                        
+                            
+                                <a href="/content/st_com/en/about/st_approach_to_sustainability/involvement-in-industrial-and-international-organizations.html">Involvement in Industrial and International Organizations</a>
+                                <br/>
+                            
+                        
+                            
+                                <a href="/content/st_com/en/about/st_approach_to_sustainability/sustainability-reports.html">Sustainability Reports</a>
+                                <br/>
+                            
+                        </div>
+                    </div>
+                    <br/>
+                
+                    <div class="row">
+                        <div class="column large-12">
+                            
+                            
+                            
+                                <p class="text-info"><strong>Customer Satisfaction</strong></p>
+                            
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="column large-6">
+                            
+                                <a href="/content/st_com/en/about/customer-satifaction/customer-satisfaction.html">Committment to Customer Satisfaction</a>
+                                <br/>
+                            
+                        
+                            
+                                <a href="/content/st_com/en/about/customer-satifaction/five-areas-of-excellence.html">Five Areas of Excellence</a>
+                                <br/>
+                            
+                        
+                            
+                        </div>
+                        <div class="column large-6">
+                            
+                        
+                            
+                        
+                            
+                                <a href="/content/st_com/en/about/customer-satifaction/customer-satisfaction-measurement.html">Customer Satisfaction Measurement</a>
+                                <br/>
+                            
+                        </div>
+                    </div>
+                    <br/>
+                
+                    <div class="row">
+                        <div class="column large-12">
+                            
+                            
+                            
+                                <p class="text-info"><strong>Careers at ST</strong></p>
+                            
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="column large-6">
+                            
+                                <a href="/content/st_com/en/about/careers/careers.html">Job Search</a>
+                                <br/>
+                            
+                        
+                            
+                                <a href="/content/st_com/en/about/careers/intern_thesis.html">Internships &amp; Thesis</a>
+                                <br/>
+                            
+                        
+                            
+                                <a href="/content/st_com/en/about/careers/your_career.html">Your Career at ST</a>
+                                <br/>
+                            
+                        
+                            
+                                <a href="/content/st_com/en/about/careers/st-locations.html">ST Locations</a>
+                                <br/>
+                            
+                        
+                            
+                        
+                            
+                        </div>
+                        <div class="column large-6">
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                                <a href="/content/st_com/en/about/careers/this_is_st.html">Our Mission &amp; Vision</a>
+                                <br/>
+                            
+                        
+                            
+                                <a href="/content/st_com/en/about/careers/our_culture_values.html">Our Culture &amp; Values</a>
+                                <br/>
+                            
+                        </div>
+                    </div>
+                    <br/>
+                </li>
+            </ul>
+        </li>
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        <li>
+            <a href="/content/st_com/en/contact-us.html" target="_self">
+                Contacts
+            </a>
+            
+        </li>
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    </ul>
+
+            </div>
+        
+
+        <div class="large-9 column hide-for-print">
+            <div class="row">
+                
+    
+    
+<link rel="stylesheet" href="/etc/clientlibs/granite/jquery-ui.7b84513df87025680b37c0cf8ba262f5.css" type="text/css">
+<link rel="stylesheet" href="/etc/designs/st-search/search.44c5814ddc08e31a24374ba0b5c069a
+688c
+7.css" type="text/css">
+<link rel="stylesheet" href="/etc/clientlibs/foundation/jquery-ui/themes/default.d41d8cd98f00b204e9800998ecf8427e.css" type="text/css">
+<script type="text/javascript" src="/etc/clientlibs/granite/jquery-ui.860dd967778e00d552b655a18a44d987.js"></script>
+<script type="text/javascript" src="/etc/clientlibs/foundation/jquery-ui.c1b572190797bb8c1ac17052704049ad.js"></script>
+<script type="text/javascript" src="/etc/clientlibs/stangularjs.51f025f5121fd79d4b7829eee680999a.js"></script>
+<script type="text/javascript" src="/etc/clientlibs/bookmarks.4248adf06773e4bc45c0e5b25bea2282.js"></script>
+<script type="text/javascript" src="/etc/clientlibs/searchHistory.d5514a136e68de6a9e75e0ba00978b81.js"></script>
+<script type="text/javascript" src="/etc/designs/st-search/search.35a0ad25c5501be11b272fcc27ea9b9f.js"></script>
+<script type="text/javascript" src="/etc/clientlibs/stcrossreference.9ca8fb3bd2c0d08145c6eb69f56869eb.js"></script>
+
+
+
+
+
+<script>
+if (typeof inheritedSearchLanguage == 'undefined') {
+		var inheritedSearchLanguage = "en";
+    }
+
+if (typeof searchBasePath == 'undefined') {
+		var searchBasePath = "\/content\/st_com\/";
+    }
+
+if (typeof selectedCategory == 'undefined') {
+    var selectedCategory = 'keywords';
+}
+
+</script>
+
+<div class="large-12 medium-12 columns show-for-large-up top-nav-right-container">
+    <div class="large-6 medium-12 small-12 columns large-offset-6 form-search-desktop-container">
+        <form id="form-search" action="/content/st_com/en/search.html" method="GET" onsubmit="return flexiReload(getSearchInputVal(this), selectedCategory, true)">
+
+            <div class="row collapse">
+                <div class="large-1 medium-1 small-1  columns">
+                    <a href="#" data-dropdown="drop1" aria-controls="drop1" aria-expanded="true" class="button dropdown prefix text-muted search-bar"><i class="fa fa-angle-down"></i></a>
+                    <ul id="drop1" data-dropdown-content class="f-dropdown" aria-hidden="true" tabindex="-1" style="position: absolute; left: -99999px; top: 37px;">
+                        <li>
+                            <p>FILTER YOUR SEARCH</p>
+                            <input id="keywords" name="filter-search" type="radio" value="keywords" checked><label for="keywords">All site</label>
+                            <br>
+                            <input id="products" name="filter-search" type="radio" value="products"><label for="products">Products</label>
+                            <br>
+                            <input id="applications" name="filter-search" type="radio" value="applications"><label for="applications">Applications</label>
+                            <br>
+                            <input id="resources" name="filter-search" type="radio" value="resources"><label for="resources">Resources</label>
+                            <br>
+                            <input id="tools" name="filter-search" type="radio" value="tools"><label for="tools">Tools &amp; Software</label>
+                            <br>
+                            
+                            <input id="x-referencee" name="filter-search" type="radio" value="x-reference"><label for="x-referencee">X-Reference</label>
+                            <br>
+                            <input id="videos" name="filter-search" type="radio" value="videos"><label for="videos">Videos</label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="small-9 columns">
+                    <input type="search" id="widgetSearchBar" placeholder="Search" class="search-bar searchKey_JS searchKeyWidget_JS no-placeholder" name="widgetSearchBar">
+                    <input type="hidden" name="widgetSearchAction" value="1">
+                </div>
+                <div class="small-2 columns">
+                    <button type="submit" class="button postfix text-muted search-bar"><i class="fa fa-search"></i></button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+		<span id="screenTypeSearchDesktop" class="show-for-large-up screenType_JS"></span>
+		<span id="screenTypeSearchTablet" class="show-for-medium-only screenType_JS"></span>
+		<span id="screenTypeSearchMobile" class="show-for-small-only screenType_JS"></span>
+
+<div class="form-search-desktop-container form-mobile-devices medium-12 small-12 show-for-medium-down columns">
+    <form id="form-search-desktop" action="/content/st_com/en/search.html" method="GET" onsubmit="return flexiReload(getSearchInputVal(this), selectedCategory, true)">
+        <div class="row collapse">
+            <div class="large-1 medium-1 small-1  columns">
+                <a href="#" data-dropdown="drop2" aria-controls="drop2" aria-expanded="true" class="button dropdown prefix text-muted search-bar"><i class="fa fa-angle-down"></i></a>
+                <ul id="drop2" data-dropdown-content class="f-dropdown" aria-hidden="true" tabindex="-1" style="position: absolute; left: -99999px; top: 37px;">
+                    <li>
+                        <p>FILTER YOUR SEARCH</p>
+                        <input id="mkeywords" name="filter-search" type="radio" value="keywords" checked><label for="mkeywords">All site</label>
+                        <br>
+                        <input id="mproducts" name="filter-search" type="radio" value="products"><label for="mproducts">Products</label>
+                        <br>
+                        <input id="mapplications" name="filter-search" type="radio" value="applications"><label for="mapplications">Applications</label>
+                        <br>
+                        <input id="mresources" name="filter-search" type="radio" value="resources"><label for="mresources">Resources</label>
+                        <br>
+                        <input id="mtools" name="filter-search" type="radio" value="tools"><label for="mtools">Tools &amp; Software</label>
+                        <br>
+                        
+                        <input id="mx-reference" name="filter-search" type="radio" value="x-reference"><label for="mx-reference">X-Reference</label>
+                        <br>
+                        <input id="mvideos" name="filter-search" type="radio" value="videos"><label for="mvideos">Videos</label>
+                    </li>
+                </ul>
+            </div>
+            <div class="small-9 columns">
+                <input type="search" id="widgetSearchBarMobile" placeholder="Search" class="search-bar searchKey_JS searchKeyWidget_JS" name="widgetSearchBar">
+	            <input type="hidden" name="widgetSearchAction" value="1">
+            </div>
+            <div class="small-2 columns">
+                <button type="submit" class="button postfix text-muted search-bar"><i class="fa fa-search"></i></button>
+            </div>
+        </div>
+    </form>
+</div>
+
+
+
+<script>
+	var screenSearchTypeDetected = getSearchScreenType();
+
+    if (screenSearchTypeDetected == 'mobile') {
+		var searchWidgetProductNoConfig = getSearchConfig("1", "3");
+		var searchWidgetKeywordsNoConfig = getSearchConfig("1", "3");
+	} else if (screenSearchTypeDetected == 'tablet') {
+		var searchWidgetProductNoConfig = getSearchConfig("1", "5");
+		var searchWidgetKeywordsNoConfig = getSearchConfig("1", "5");
+    } else {
+		var searchWidgetProductNoConfig = getSearchConfig("1", "3");
+		var searchWidgetKeywordsNoConfig = getSearchConfig("", "5");
+    }
+</script>
+
+                
+    <div class="show-for-medium-down top-nav-right-container columns">
+        <ul class="top-nav-right small-block-grid-4">
+            <li>
+                
+    
+    
+        
+            <a href="https://my.st.com/content/my_st_com/en/error/404.html" class="ui-link icon-myst"></a>
+        
+        
+    
+
+            </li>
+            <li>
+                <a data-dropdown="langmenusmall" aria-controls="langmenusmall" aria-expanded="false" href="#" class="ui-link icon-language"></a>
+                <ul id="langmenusmall" class="f-dropdown mobile-choice-list" data-dropdown-content aria-hidden="true" tabindex="-1">
+                    <li><a href="/content/st_com/en/error/404.html">English <i class="fa fa-check"></i></a></li>
+                
+                    <li><a href="/content/st_com/zh/error/404.html">中文 </a></li>
+                
+                    <li><a href="/content/st_com/ja/error/404.html">日本語 </a></li>
+                </ul>
+            </li>
+            <li><a href="/content/st_com/en/product-selector-welcome.html" class="ui-link icon-parametric"></a></li>
+            <li><a href="#" class="left-off-canvas-toggle menu-icon text-center" aria-expanded="false"><i class="fa fa-align-justify fa-lg"></i></a></li>
+        </ul>
+    </div>
+
+    <div class="large-12 medium-12 columns show-for-large-up top-nav-right-container">
+        
+    
+
+        <div class="large-12 medium-12 small-12 columns navsearch-padding">
+            <ul class="top-nav-right">
+                <li>
+                    
+    
+    
+        
+        
+            <a href="https://my.st.com/content/my_st_com/en/error/404.html" class="ui-link">
+                <i class="fa fa-user fa-lg"></i>
+                Login
+            </a>
+        
+    
+
+                </li>
+                <li>
+                    <a data-dropdown="langmenu" aria-controls="langmenu" aria-expanded="false" href="#" class="ui-link">
+                        <i class="fa fa-globe fa-lg"></i>
+                        English
+                    </a>
+                    <ul id="langmenu" class="f-dropdown" data-dropdown-content aria-hidden="true" tabindex="-1">
+                        <li><a href="/content/st_com/en/error/404.html">English</a></li>
+                    
+                        <li><a href="/content/st_com/zh/error/404.html">中文</a></li>
+                    
+                        <li><a href="/content/st_com/ja/error/404.html">日本語</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="/content/st_com/en/product-selector-welcome.html" class="ui-link">
+                        <i class="fa fa-sliders fa-lg"></i>
+                        Product Catalog
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    
+    
+
+
+
+
+
+
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+            
+            <div>
+    <div class="row error-page">
+        <div class="large-8 large-offset-2 columns margin-top-50 margin-bottom-50">
+            <div><h1 class="text-center margin-bottom-25 error-messaging">
+    
+    
+        SORRY, PAGE NOT FOUND
+    
+
+</h1>
+
+
+
+<p class="text-center">We&#39;re sorry, the page or document you requested is not available</p>
+    <p class="text-center">The URL entered might either be no longer valid or the requested service may be temporarily unavailable. Please verify  the address  has been entered correctly. The links below and the search function located in the page header may also be helpful to find the requested information.</p>
+</div>
+            <div><ul class="tabs site-map-tabs" data-tab>
+    <li class="site-map-tab tab-title active">
+        <a href="#panel1">Products</a>
+    </li>
+    <li class="site-map-tab tab-title">
+        <a href="#panel2">Applications</a>
+    </li>
+    <li class="site-map-tab tab-title">
+        <a href="#panel3">Support &amp; Community </a>
+    </li>
+</ul>
+
+<div class="tabs-content">
+    
+    <div class="content active" id="panel1">
+        <div class="row">
+            
+                
+    <div class="column large-8">
+        <h2>Sensors, Analog, Power and Automotive Products</h2>
+        <div class="row">
+            <div class="column large-6">
+                
+                    <a href="/content/st_com/en/products/aerospace-and-defense-products.html">Aerospace and Defense Products</a>
+                    <br/>
+                
+            
+                
+                    <a href="/content/st_com/en/products/amplifiers-and-comparators.html">Amplifiers and Comparators </a>
+                    <br/>
+                
+            
+                
+                    <a href="/content/st_com/en/products/audio-ics.html">Audio ICs</a>
+                    <br/>
+                
+            
+                
+                    <a href="/content/st_com/en/products/automotive-analog-power-ics.html">Automotive Analog &amp; Power ICs</a>
+                    <br/>
+                
+            
+                
+                    <a href="/content/st_com/en/products/automotive-infotainment-and-telematics.html">Automotive Infotainment and Telematics</a>
+                    <br/>
+                
+            
+                
+                    <a href="/content/st_com/en/products/automotive-logic-ics.html">Automotive Logic ICs</a>
+                    <br/>
+                
+            
+                
+                    <a href="/content/st_com/en/products/automotive-microcontrollers.html">Automotive Microcontrollers</a>
+                    <br/>
+                
+            
+                
+                    <a href="/content/st_com/en/products/clocks-and-timers.html">Clocks and Timers</a>
+                    <br/>
+                
+            
+                
+                    <a href="/content/st_com/en/products/data-converters.html">Data Converters </a>
+                    <br/>
+                
+            
+                
+                    <a href="/content/st_com/en/products/diodes-and-rectifiers.html">Diodes and Rectifiers</a>
+                    <br/>
+                
+            
+                
+                    <a href="/content/st_com/en/products/emi-filtering-and-signal-conditioning.html">EMI Filtering and Signal Conditioning</a>
+                    <br/>
+                
+            
+                
+                    <a href="/content/st_com/en/products/interfaces-and-transceivers.html">Interfaces and Transceivers</a>
+                    <br/>
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            </div>
+            <div class="column large-6">
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+                    <a href="/content/st_com/en/products/mems-and-sensors.html">MEMS and Sensors</a>
+                    <br/>
+                
+            
+                
+                    <a href="/content/st_com/en/products/motor-drivers.html">Motor Drivers</a>
+                    <br/>
+                
+            
+                
+                    <a href="/content/st_com/en/products/power-management.html">Power Management</a>
+                    <br/>
+                
+            
+                
+                    <a href="/content/st_com/en/products/power-modules.html">Power Modules</a>
+                    <br/>
+                
+            
+                
+                    <a href="/content/st_com/en/products/power-transistors.html">Power Transistors</a>
+                    <br/>
+                
+            
+                
+                    <a href="/content/st_com/en/products/protection-devices.html">Protection Devices</a>
+                    <br/>
+                
+            
+                
+                    <a href="/content/st_com/en/products/radio-frequency-transistors.html">Radio Frequency Transistors</a>
+                    <br/>
+                
+            
+                
+                    <a href="/content/st_com/en/products/reset-and-supervisor-ics.html">Reset and Supervisor ICs</a>
+                    <br/>
+                
+            
+                
+                    <a href="/content/st_com/en/products/switches-and-multiplexers.html">Switches and Multiplexers</a>
+                    <br/>
+                
+            
+                
+                    <a href="/content/st_com/en/products/thyristors-scr-and-ac-switches.html">Thyristors (SCR) and AC Switches</a>
+                    <br/>
+                
+            
+                
+                    <a href="/content/st_com/en/products/wireless-connectivity.html">Wireless Connectivity </a>
+                    <br/>
+                
+            </div>
+        </div>
+    </div>
+
+            
+            
+        
+            
+            
+                
+    <div class="column large-4">
+        <h2>Microcontrollers, Memories, Imaging and Digital ICs</h2>
+        
+            <a href="/content/st_com/en/products/digital-set-top-box-ics.html">Digital Set-Top Box ICs</a>
+            <br/>
+        
+            <a href="/content/st_com/en/products/display-controllers.html">Display Controllers</a>
+            <br/>
+        
+            <a href="/content/st_com/en/products/imaging-and-photonics-solutions.html">Imaging and Photonics Solutions</a>
+            <br/>
+        
+            <a href="/content/st_com/en/products/memories.html">Memories</a>
+            <br/>
+        
+            <a href="/content/st_com/en/products/microcontrollers.html">Microcontrollers</a>
+            <br/>
+        
+            <a href="/content/st_com/en/products/nfc.html">NFC</a>
+            <br/>
+        
+            <a href="/content/st_com/en/products/spear-embedded-microprocessors.html">SPEAr Embedded Microprocessors</a>
+            <br/>
+        
+            <a href="/content/st_com/en/products/secure-mcus.html">Secure MCUs</a>
+            <br/>
+        
+    </div>
+
+            
+        </div>
+    </div>
+
+    
+    <div class="content " id="panel2">
+        <div class="row">
+            
+                
+    <div class="column large-8">
+        <h2>Applications</h2>
+        <div class="row">
+            <div class="column large-6">
+                
+                    <a href="/content/st_com/en/applications/appliances-and-industrial-tools.html">Appliances and Industrial Tools</a>
+                    <br/>
+                
+            
+                
+                    <a href="/content/st_com/en/applications/automation.html">Automation</a>
+                    <br/>
+                
+            
+                
+                    <a href="/content/st_com/en/applications/automotive-and-transportation.html">Automotive and Transportation</a>
+                    <br/>
+                
+            
+                
+                    <a href="/content/st_com/en/applications/connectivity.html">Connectivity</a>
+                    <br/>
+                
+            
+                
+                    <a href="/content/st_com/en/applications/energy-generation-and-distribution.html">Energy generation and distribution</a>
+                    <br/>
+                
+            
+                
+                    <a href="/content/st_com/en/applications/internet-of-things-iot.html">Internet of Things (IoT)</a>
+                    <br/>
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            </div>
+            <div class="column large-6">
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+                    <a href="/content/st_com/en/applications/led-and-general-lighting.html">LED and General Lighting</a>
+                    <br/>
+                
+            
+                
+                    <a href="/content/st_com/en/applications/medical-and-healthcare.html">Medical and Healthcare</a>
+                    <br/>
+                
+            
+                
+                    <a href="/content/st_com/en/applications/motor-control.html">Motor Control</a>
+                    <br/>
+                
+            
+                
+                    <a href="/content/st_com/en/applications/personal-and-multimedia.html">Personal and Multimedia</a>
+                    <br/>
+                
+            
+                
+                    <a href="/content/st_com/en/applications/power-management.html">Power Management</a>
+                    <br/>
+                
+            </div>
+        </div>
+    </div>
+
+            
+            
+        </div>
+    </div>
+
+    
+    <div class="content " id="panel3">
+        <div class="row">
+            
+                
+    <div class="column large-8">
+        <h2>Support</h2>
+        <div class="row">
+            <div class="column large-6">
+                
+                    <a href="/content/st_com/en/support/third-party/design-consultants-for-analog-power-designs.html">Analog/Power Design Consultants</a>
+                    <br/>
+                
+            
+                
+                    <a href="/content/st_com/en/contact-us.html">Contacts</a>
+                    <br/>
+                
+            
+                
+                    <a href="https://my.st.com/public/Faq/default.aspx">FAQ</a>
+                    <br/>
+                
+            
+                
+                    <a href="/content/st_com/en/support/learning/learning_home.html">Learning</a>
+                    <br/>
+                
+            
+                
+                    <a href="/content/st_com/en/support/resources/product-longevity.html">Longevity Commitment</a>
+                    <br/>
+                
+            
+                
+                    <a href="/content/st_com/en/support/third-party/design-consultants-for-mcus.html">MCU Design Consultants</a>
+                    <br/>
+                
+            
+                
+                    <a href="/content/st_com/en/support/quality-and-reliability.html">Quality &amp; Reliability</a>
+                    <br/>
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            </div>
+            <div class="column large-6">
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+                    <a href="/content/st_com/en/support/online-support.html">Online Support</a>
+                    <br/>
+                
+            
+                
+                    <a href="/content/st_com/en/support/third-party/third-parties-for-dual-interface-eeproms.html">Third Parties for EEPROM Programmers</a>
+                    <br/>
+                
+            
+                
+                    <a href="/content/st_com/en/support/third-party/third-parties-for-mcu-tools.html">Third Parties for MCU tools</a>
+                    <br/>
+                
+            
+                
+                    <a href="/content/st_com/en/support/third-party/third-parties-for-spc-56-automotive-mcus.html">Third Parties for SPC 5x Automotive MCUs</a>
+                    <br/>
+                
+            
+                
+                    <a href="/content/st_com/en/support/third-party/third-party-training.html">Third Party Training Partners for MCUs</a>
+                    <br/>
+                
+            
+                
+                    <a href="/content/st_com/en/support/learning/video-page.html">Video Center</a>
+                    <br/>
+                
+            </div>
+        </div>
+    </div>
+
+            
+            
+        
+            
+            
+                
+    <div class="column large-4">
+        <h2>Communites</h2>
+        
+            <a href="https://my.st.com/public/STe2ecommunities/default.aspx">ST e2e Communities</a>
+            <br/>
+        
+    </div>
+
+            
+        </div>
+    </div>
+
+</div>
+
+
+
+
+
+</div>
+            <div>
+
+</div>
+        </div>
+    </div>
+</div>
+            
+    <div id="menu-footer-container" class="hide-for-print">
+        <div class="row">
+            <div class="large-12 columns">
+                <ul id="menu-footer" class="small-block-grid-1 medium-block-grid-3 large-block-grid-5 small-only-text-center" data-equalizer>
+
+                    <li data-equalizer-watch>
+                        About STMicroelectronics
+                        <ul class="no-bullet">
+                            <li>
+                                <a href="/content/st_com/en/about/st_company_information/who-we-are.html">
+                                    Who We Are
+                                </a>
+                            </li>
+                        
+                            <li>
+                                <a href="/content/st_com/en/about/st_company_information/st_executive_officers.html">
+                                    Management
+                                </a>
+                            </li>
+                        
+                            <li>
+                                <a href="http://blog.st.com">
+                                    Blog
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                
+
+                    <li data-equalizer-watch>
+                        Media Center
+                        <ul class="no-bullet">
+                            <li>
+                                <a href="/content/st_com/en/about/media-center/press-and-news.html/page=1.html">
+                                    Newsroom
+                                </a>
+                            </li>
+                        
+                            <li>
+                                <a href="/content/st_com/en/about/media-center/backgrounders.html">
+                                    Backgrounders
+                                </a>
+                            </li>
+                        
+                            <li>
+                                <a href="/content/st_com/en/about/media-center/media_relations_contact.html">
+                                    Media Contacts
+                                </a>
+                            </li>
+                        
+                            <li>
+                                <a href="/content/st_com/en/about/media-center/subscribe
+2051
+.html">
+                                    Media Subscription
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                
+
+                    <li data-equalizer-watch>
+                        Investor Relations
+                        <ul class="no-bullet">
+                            <li>
+                                <a href="http://investors.st.com/">
+                                    Investor Relations Home
+                                </a>
+                            </li>
+                        
+                            <li>
+                                <a href="/content/st_com/en/about/st_company_information/calendar_presentations.html">
+                                    Calendar &amp; Presentations
+                                </a>
+                            </li>
+                        
+                            <li>
+                                <a href="/content/st_com/en/about/st_company_information/quarterly_results.html">
+                                    Quarterly Results
+                                </a>
+                            </li>
+                        
+                            <li>
+                                <a href="/content/st_com/en/about/st_approach_to_sustainability/sustainability_governance.html">
+                                    Corporate Governance
+                                </a>
+                            </li>
+                        
+                            <li>
+                                <a href="/content/st_com/en/contact-us.html">
+                                    Contact Information
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                
+
+                    <li data-equalizer-watch>
+                        Sustainability
+                        <ul class="no-bullet">
+                            <li>
+                                <a href="/content/st_com/en/about/st_approach_to_sustainability.html">
+                                    ST Approach to Sustainability
+                                </a>
+                            </li>
+                        
+                            <li>
+                                <a href="/content/st_com/en/about/st_approach_to_sustainability/sustainability-reports.html">
+                                    Sustainability Reports
+                                </a>
+                            </li>
+                        
+                            <li>
+                                <a href="http://www.stfoundation.org/">
+                                    ST Foundation
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                
+
+                    <li data-equalizer-watch>
+                        Careers
+                        <ul class="no-bullet">
+                            <li>
+                                <a href="/content/st_com/en/about/careers/careers.html">
+                                    Job Search
+                                </a>
+                            </li>
+                        
+                            <li>
+                                <a href="/content/st_com/en/about/careers/this_is_st.html">
+                                    Our Mission &amp; Vision
+                                </a>
+                            </li>
+                        
+                            <li>
+                                <a href="/content/st_com/en/about/careers/our_culture_values.html">
+                                    Our Culture &amp; Values
+                                </a>
+                            </li>
+                        
+                            <li>
+                                <a href="/content/st_com/en/about/careers/intern_thesis.html">
+                                    Internships/Thesis
+                                </a>
+                            </li>
+                        
+                            <li>
+                                <a href="/content/st_com/en/about/careers/your_career.html">
+                                    Your Career at ST
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="medium-4 columns">
+            <p class="small-only-text-center footer-copyright-links">
+                <small class="text-muted">All rights reserved © 2016 STMicroelectronics </small>
+                <br>
+                <small class="hide-for-print">
+                        <a class="color-inherit" href="/content/st_com/en/common/terms-of-use.html">Terms of use</a><span> | </span>
+                
+                        <a class="color-inherit" href="/resource/en/sales_agreement/ST%20Terms%20and%20Conditions%20of%20Sales.pdf">Sales Terms &amp; Conditions</a><span> | </span>
+                
+                        <a class="color-inherit" href="/content/st_com/en/common/privacy-policy.html">Privacy Policy</a><span> | </span>
+                
+                        <a class="color-inherit" href="/content/st_com/en/contact-us.html">Contacts</a>
+                </small>
+            </p>
+            
+        </div>
+        <div class="medium-4 columns hide-for-print">
+    <form id="newsletterForm">
+        <div class="row collapse">
+            <div class="small-10 columns">
+                <input type="text" id="placenewsletter" name="recipient.email" placeholder="Enter email to subscribe to our newsletter"/>
+            </div>
+            <div class="small-2 columns">
+                <a class="text-info button postfix newsletter-submit disabled" data-subscription-url="/content/st_com/en/newsletters-subscription.html" data-preferences-url="https://my.st.com/content/my_st_com/en/my-space/my-preferences.html">
+                    <img src="/etc/clientlibs/st-site/media/app/images/icon_submitnewsletter.png" alt="">
+                </a>
+            </div>
+        </div>
+    </form>
+</div>
+        <div class="medium-4 columns text-right hide-for-print">
+            <p class="small-only-text-center social">
+                <a href="https://www.facebook.com/STMicroelectronics.NV"><i class="fa fa-2x fa-facebook-square"></i></a>
+            
+                <a href="https://twitter.com/st_world"><i class="fa fa-2x fa-twitter-square"></i></a>
+            
+                <a href="https://plus.google.com/+stmicroelectronics"><i class="fa fa-2x fa-google-plus-square"></i></a>
+            
+                <a href="http://www.youtube.com/user/STonlineMedia"><i class="fa fa-2x fa-youtube-square"></i></a>
+            
+                <a href="http://www.linkedin.com/company/stmicroelectronics"><i class="fa fa-2x fa-linkedin-square"></i></a>
+            </p>
+        </div>
+    </div>
+
+        </div>
+    </div>
+</div>
+
+<div id="videoModal" class="reveal-modal large" data-reveal="" style="opacity: 1;">
+    <h2 id="videoModalTitle"></h2>
+
+    <div class="flex-video widescreen videocontent" style="display: block;"></div>
+    <a class="close-reveal-modal">&#215;</a>
+</div>
+
+<div class="modal fade" id="genericModal" tabindex="-1" role="dialog" aria-labelledby="genericModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+        </div> <!-- /.modal-content -->
+    </div> <!-- /.modal-dialog -->
+</div>
+
+
+
+
+    
+<script type="text/javascript" src="/etc/clientlibs/st-site.1b7efef02cededb1471525643ffc006a.js"></script>
+<script type="text/javascript" src="/etc/clientlibs/st-site/components/saveToMySt.142a2472b5b85e900822d74d62a2a9f9.js"></script>
+<script type="text/javascript" src="/etc/clientlibs/st-site/components/canonical.86ce755405058cdafa92784cb6239bc6.js"></script>
+<script type="text/javascript" src="/etc/clientlibs/st-site/components/cookiePanel.30dee9d697c61812d6c58f1fbc10e6f3.js"></script>
+
+
+</div>
+
+        <div class="cloudservice campaign"></div>
+<script type="text/javascript">_satellite.pageBottom();</script>
+
+    </body>
+</html>
+0
+

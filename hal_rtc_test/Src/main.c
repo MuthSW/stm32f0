@@ -36,8 +36,6 @@
 #include "rtc.h"
 #include "tim.h"
 #include "gpio.h"
-#include <stdio.h>
-
 
 /* USER CODE BEGIN Includes */
 #include "stm32f0308_discovery.h"
@@ -59,11 +57,11 @@ uint8_t aShowTime[50] = {0};
 /* Private function prototypes -----------------------------------------------*/
 void SystemClock_Config(void);
 void Error_Handler(void);
-static void RTC_AlarmConfig(void);
-static void RTC_TimeShow(uint8_t* showtime);
 
 /* USER CODE BEGIN PFP */
 /* Private function prototypes -----------------------------------------------*/
+static void RTC_AlarmConfig(void);
+static void RTC_TimeShow(uint8_t* showtime);
 
 /* USER CODE END PFP */
 

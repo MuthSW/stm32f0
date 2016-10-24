@@ -1,0 +1,428 @@
+Archive member included to satisfy reference by file (symbol)
+
+/home/thomas.muth/localopt/eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.7.0.201602291252/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/armv6-m/libgcc.a(_udivsi3.o)
+                              /tmp/ccOI5QUJ.o (__aeabi_uidiv)
+/home/thomas.muth/localopt/eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.7.0.201602291252/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/armv6-m/libgcc.a(_dvmd_tls.o)
+                              /home/thomas.muth/localopt/eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.7.0.201602291252/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/armv6-m/libgcc.a(_udivsi3.o) (__aeabi_idiv0)
+/home/thomas.muth/localopt/eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.7.0.201602291252/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m/libg.a(lib_a-exit.o)
+                              /home/thomas.muth/localopt/eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.7.0.201602291252/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m/crt0.o (exit)
+/home/thomas.muth/localopt/eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.7.0.201602291252/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m/libg.a(lib_a-impure.o)
+                              /home/thomas.muth/localopt/eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.7.0.201602291252/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m/libg.a(lib_a-exit.o) (_global_impure_ptr)
+/home/thomas.muth/localopt/eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.7.0.201602291252/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m/libg.a(lib_a-init.o)
+                              /home/thomas.muth/localopt/eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.7.0.201602291252/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m/crt0.o (__libc_init_array)
+/home/thomas.muth/localopt/eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.7.0.201602291252/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m/libg.a(lib_a-memset.o)
+                              /home/thomas.muth/localopt/eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.7.0.201602291252/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m/crt0.o (memset)
+/home/thomas.muth/localopt/eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.7.0.201602291252/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m/libg.a(lib_a-__call_atexit.o)
+                              /home/thomas.muth/localopt/eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.7.0.201602291252/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m/libg.a(lib_a-exit.o) (__call_exitprocs)
+/home/thomas.muth/localopt/eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.7.0.201602291252/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m/libg.a(lib_a-atexit.o)
+                              /home/thomas.muth/localopt/eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.7.0.201602291252/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m/libg.a(lib_a-__call_atexit.o) (atexit)
+/home/thomas.muth/localopt/eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.7.0.201602291252/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m/libg.a(lib_a-fini.o)
+                              /home/thomas.muth/localopt/eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.7.0.201602291252/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m/libg.a(lib_a-__call_atexit.o) (__libc_fini_array)
+/home/thomas.muth/localopt/eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.7.0.201602291252/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m/libg.a(lib_a-__atexit.o)
+                              /home/thomas.muth/localopt/eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.7.0.201602291252/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m/libg.a(lib_a-atexit.o) (__register_exitproc)
+
+Discarded input sections
+
+ .text          0x00000000        0x0 /home/thomas.muth/localopt/eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.7.0.201602291252/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/armv6-m/crti.o
+ .data          0x00000000        0x0 /home/thomas.muth/localopt/eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.7.0.201602291252/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/armv6-m/crti.o
+ .bss           0x00000000        0x0 /home/thomas.muth/localopt/eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.7.0.201602291252/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/armv6-m/crti.o
+ .text          0x00000000       0xb4 /home/thomas.muth/localopt/eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.7.0.201602291252/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/armv6-m/crtbegin.o
+ .data          0x00000000        0x4 /home/thomas.muth/localopt/eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.7.0.201602291252/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/armv6-m/crtbegin.o
+ .bss           0x00000000       0x1c /home/thomas.muth/localopt/eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.7.0.201602291252/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/armv6-m/crtbegin.o
+ .init_array    0x00000000        0x4 /home/thomas.muth/localopt/eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.7.0.201602291252/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/armv6-m/crtbegin.o
+ .fini_array    0x00000000        0x4 /home/thomas.muth/localopt/eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.7.0.201602291252/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/armv6-m/crtbegin.o
+ .eh_frame      0x00000000        0x0 /home/thomas.muth/localopt/eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.7.0.201602291252/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/armv6-m/crtbegin.o
+ .jcr           0x00000000        0x0 /home/thomas.muth/localopt/eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.7.0.201602291252/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/armv6-m/crtbegin.o
+ .tm_clone_table
+                0x00000000        0x0 /home/thomas.muth/localopt/eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.7.0.201602291252/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/armv6-m/crtbegin.o
+ .ARM.attributes
+                0x00000000       0x2c /home/thomas.muth/localopt/eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.7.0.201602291252/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/armv6-m/crtbegin.o
+ .text          0x00000000       0x78 /home/thomas.muth/localopt/eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.7.0.201602291252/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m/crt0.o
+ .data          0x00000000        0x0 /home/thomas.muth/localopt/eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.7.0.201602291252/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m/crt0.o
+ .bss           0x00000000        0x0 /home/thomas.muth/localopt/eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.7.0.201602291252/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m/crt0.o
+ .ARM.extab     0x00000000        0x0 /home/thomas.muth/localopt/eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.7.0.201602291252/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m/crt0.o
+ .ARM.exidx     0x00000000        0x8 /home/thomas.muth/localopt/eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.7.0.201602291252/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m/crt0.o
+ .ARM.attributes
+                0x00000000       0x1b /home/thomas.muth/localopt/eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.7.0.201602291252/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m/crt0.o
+ .text          0x00000000        0x0 /tmp/ccOI5QUJ.o
+ .data          0x00000000        0x0 /tmp/ccOI5QUJ.o
+ .bss           0x00000000        0x0 /tmp/ccOI5QUJ.o
+ .text          0x00000000        0x0 /tmp/ccQV2qh5.o
+ .data          0x00000000        0x0 /tmp/ccQV2qh5.o
+ .bss           0x00000000        0x0 /tmp/ccQV2qh5.o
+ .text.SystemCoreClockUpdate
+                0x00000000       0x64 /tmp/ccQV2qh5.o
+ .data.AHBPrescTable
+                0x00000000       0x10 /tmp/ccQV2qh5.o
+ .text          0x00000000       0x14 /tmp/ccWOKklr.o
+ .data          0x00000000        0x0 /tmp/ccWOKklr.o
+ .bss           0x00000000        0x0 /tmp/ccWOKklr.o
+ .data          0x00000000        0x0 /home/thomas.muth/localopt/eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.7.0.201602291252/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/armv6-m/libgcc.a(_udivsi3.o)
+ .bss           0x00000000        0x0 /home/thomas.muth/localopt/eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.7.0.201602291252/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/armv6-m/libgcc.a(_udivsi3.o)
+ .data          0x00000000        0x0 /home/thomas.muth/localopt/eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.7.0.201602291252/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/armv6-m/libgcc.a(_dvmd_tls.o)
+ .bss           0x00000000        0x0 /home/thomas.muth/localopt/eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.7.0.201602291252/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/armv6-m/libgcc.a(_dvmd_tls.o)
+ .text          0x00000000        0x0 /home/thomas.muth/localopt/eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.7.0.201602291252/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m/libg.a(lib_a-exit.o)
+ .data          0x00000000        0x0 /home/thomas.muth/localopt/eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.7.0.201602291252/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m/libg.a(lib_a-exit.o)
+ .bss           0x00000000        0x0 /home/thomas.muth/localopt/eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.7.0.201602291252/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m/libg.a(lib_a-exit.o)
+ .text.exit     0x00000000       0x20 /home/thomas.muth/localopt/eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.7.0.201602291252/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m/libg.a(lib_a-exit.o)
+ .debug_frame   0x00000000       0x28 /home/thomas.muth/localopt/eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.7.0.201602291252/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m/libg.a(lib_a-exit.o)
+ .ARM.attributes
+                0x00000000       0x2c /home/thomas.muth/localopt/eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.7.0.201602291252/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m/libg.a(lib_a-exit.o)
+ .text          0x00000000        0x0 /home/thomas.muth/localopt/eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.7.0.201602291252/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m/libg.a(lib_a-impure.o)
+ .data          0x00000000        0x0 /home/thomas.muth/localopt/eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.7.0.201602291252/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m/libg.a(lib_a-impure.o)
+ .bss           0x00000000        0x0 /home/thomas.muth/localopt/eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.7.0.201602291252/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m/libg.a(lib_a-impure.o)
+ .data.impure_data
+                0x00000000      0x428 /home/thomas.muth/localopt/eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.7.0.201602291252/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m/libg.a(lib_a-impure.o)
+ .data._impure_ptr
+                0x00000000        0x4 /home/thomas.muth/localopt/eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.7.0.201602291252/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m/libg.a(lib_a-impure.o)
+ .rodata.str1.4
+                0x00000000        0x2 /home/thomas.muth/localopt/eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.7.0.201602291252/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m/libg.a(lib_a-impure.o)
+ .rodata._global_impure_ptr
+                0x00000000        0x4 /home/thomas.muth/localopt/eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.7.0.201602291252/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m/libg.a(lib_a-impure.o)
+ .ARM.attributes
+                0x00000000       0x2c /home/thomas.muth/localopt/eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.7.0.201602291252/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m/libg.a(lib_a-impure.o)
+ .text          0x00000000        0x0 /home/thomas.muth/localopt/eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.7.0.201602291252/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m/libg.a(lib_a-init.o)
+ .data          0x00000000        0x0 /home/thomas.muth/localopt/eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.7.0.201602291252/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m/libg.a(lib_a-init.o)
+ .bss           0x00000000        0x0 /home/thomas.muth/localopt/eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.7.0.201602291252/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m/libg.a(lib_a-init.o)
+ .text          0x00000000        0x0 /home/thomas.muth/localopt/eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.7.0.201602291252/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m/libg.a(lib_a-memset.o)
+ .data          0x00000000        0x0 /home/thomas.muth/localopt/eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.7.0.201602291252/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m/libg.a(lib_a-memset.o)
+ .bss           0x00000000        0x0 /home/thomas.muth/localopt/eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.7.0.201602291252/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m/libg.a(lib_a-memset.o)
+ .text.memset   0x00000000       0x8c /home/thomas.muth/localopt/eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.7.0.201602291252/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m/libg.a(lib_a-memset.o)
+ .debug_frame   0x00000000       0x2c /home/thomas.muth/localopt/eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.7.0.201602291252/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m/libg.a(lib_a-memset.o)
+ .ARM.attributes
+                0x00000000       0x2c /home/thomas.muth/localopt/eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.7.0.201602291252/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m/libg.a(lib_a-memset.o)
+ .text          0x00000000        0x0 /home/thomas.muth/localopt/eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.7.0.201602291252/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m/libg.a(lib_a-__call_atexit.o)
+ .data          0x00000000        0x0 /home/thomas.muth/localopt/eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.7.0.201602291252/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m/libg.a(lib_a-__call_atexit.o)
+ .bss           0x00000000        0x0 /home/thomas.muth/localopt/eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.7.0.201602291252/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m/libg.a(lib_a-__call_atexit.o)
+ .text.startup.register_fini
+                0x00000000       0x18 /home/thomas.muth/localopt/eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.7.0.201602291252/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m/libg.a(lib_a-__call_atexit.o)
+ .init_array.00000
+                0x00000000        0x4 /home/thomas.muth/localopt/eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.7.0.201602291252/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m/libg.a(lib_a-__call_atexit.o)
+ .text.__call_exitprocs
+                0x00000000       0xfc /home/thomas.muth/localopt/eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.7.0.201602291252/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m/libg.a(lib_a-__call_atexit.o)
+ .debug_frame   0x00000000       0x54 /home/thomas.muth/localopt/eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.7.0.201602291252/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m/libg.a(lib_a-__call_atexit.o)
+ .ARM.attributes
+                0x00000000       0x2c /home/thomas.muth/localopt/eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.7.0.201602291252/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m/libg.a(lib_a-__call_atexit.o)
+ .text          0x00000000        0x0 /home/thomas.muth/localopt/eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.7.0.201602291252/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m/libg.a(lib_a-atexit.o)
+ .data          0x00000000        0x0 /home/thomas.muth/localopt/eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.7.0.201602291252/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m/libg.a(lib_a-atexit.o)
+ .bss           0x00000000        0x0 /home/thomas.muth/localopt/eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.7.0.201602291252/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m/libg.a(lib_a-atexit.o)
+ .text.atexit   0x00000000       0x10 /home/thomas.muth/localopt/eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.7.0.201602291252/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m/libg.a(lib_a-atexit.o)
+ .debug_frame   0x00000000       0x28 /home/thomas.muth/localopt/eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.7.0.201602291252/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m/libg.a(lib_a-atexit.o)
+ .ARM.attributes
+                0x00000000       0x2c /home/thomas.muth/localopt/eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.7.0.201602291252/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m/libg.a(lib_a-atexit.o)
+ .text          0x00000000        0x0 /home/thomas.muth/localopt/eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.7.0.201602291252/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m/libg.a(lib_a-fini.o)
+ .data          0x00000000        0x0 /home/thomas.muth/localopt/eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.7.0.201602291252/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m/libg.a(lib_a-fini.o)
+ .bss           0x00000000        0x0 /home/thomas.muth/localopt/eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.7.0.201602291252/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m/libg.a(lib_a-fini.o)
+ .text.__libc_fini_array
+                0x00000000       0x34 /home/thomas.muth/localopt/eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.7.0.201602291252/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m/libg.a(lib_a-fini.o)
+ .debug_frame   0x00000000       0x2c /home/thomas.muth/localopt/eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.7.0.201602291252/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m/libg.a(lib_a-fini.o)
+ .ARM.attributes
+                0x00000000       0x2c /home/thomas.muth/localopt/eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.7.0.201602291252/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m/libg.a(lib_a-fini.o)
+ .text          0x00000000        0x0 /home/thomas.muth/localopt/eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.7.0.201602291252/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m/libg.a(lib_a-__atexit.o)
+ .data          0x00000000        0x0 /home/thomas.muth/localopt/eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.7.0.201602291252/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m/libg.a(lib_a-__atexit.o)
+ .bss           0x00000000        0x0 /home/thomas.muth/localopt/eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.7.0.201602291252/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m/libg.a(lib_a-__atexit.o)
+ .text.__register_exitproc
+                0x00000000       0xd4 /home/thomas.muth/localopt/eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.7.0.201602291252/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m/libg.a(lib_a-__atexit.o)
+ .debug_frame   0x00000000       0x3c /home/thomas.muth/localopt/eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.7.0.201602291252/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m/libg.a(lib_a-__atexit.o)
+ .ARM.attributes
+                0x00000000       0x2c /home/thomas.muth/localopt/eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.7.0.201602291252/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m/libg.a(lib_a-__atexit.o)
+ .text          0x00000000        0x0 /home/thomas.muth/localopt/eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.7.0.201602291252/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/armv6-m/crtend.o
+ .data          0x00000000        0x0 /home/thomas.muth/localopt/eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.7.0.201602291252/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/armv6-m/crtend.o
+ .bss           0x00000000        0x0 /home/thomas.muth/localopt/eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.7.0.201602291252/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/armv6-m/crtend.o
+ .eh_frame      0x00000000        0x4 /home/thomas.muth/localopt/eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.7.0.201602291252/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/armv6-m/crtend.o
+ .jcr           0x00000000        0x4 /home/thomas.muth/localopt/eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.7.0.201602291252/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/armv6-m/crtend.o
+ .tm_clone_table
+                0x00000000        0x0 /home/thomas.muth/localopt/eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.7.0.201602291252/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/armv6-m/crtend.o
+ .ARM.attributes
+                0x00000000       0x2c /home/thomas.muth/localopt/eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.7.0.201602291252/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/armv6-m/crtend.o
+ .text          0x00000000        0x0 /home/thomas.muth/localopt/eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.7.0.201602291252/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/armv6-m/crtn.o
+ .data          0x00000000        0x0 /home/thomas.muth/localopt/eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.7.0.201602291252/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/armv6-m/crtn.o
+ .bss           0x00000000        0x0 /home/thomas.muth/localopt/eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.7.0.201602291252/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/armv6-m/crtn.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+FLASH            0x08000000         0x00010000         xr
+RAM              0x20000000         0x00002000         xrw
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD /home/thomas.muth/localopt/eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.7.0.201602291252/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/armv6-m/crti.o
+LOAD /home/thomas.muth/localopt/eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.7.0.201602291252/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/armv6-m/crtbegin.o
+LOAD /home/thomas.muth/localopt/eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.7.0.201602291252/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m/crt0.o
+LOAD /tmp/ccOI5QUJ.o
+LOAD /tmp/ccQV2qh5.o
+LOAD /tmp/ccWOKklr.o
+LOAD Libraries/libstm32f0.a
+START GROUP
+LOAD /home/thomas.muth/localopt/eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.7.0.201602291252/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/armv6-m/libgcc.a
+LOAD /home/thomas.muth/localopt/eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.7.0.201602291252/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m/libg.a
+LOAD /home/thomas.muth/localopt/eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.7.0.201602291252/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m/libc.a
+END GROUP
+LOAD /home/thomas.muth/localopt/eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.7.0.201602291252/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/armv6-m/crtend.o
+LOAD /home/thomas.muth/localopt/eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.7.0.201602291252/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/armv6-m/crtn.o
+                0x20002000                _estack = 0x20002000
+
+.isr_vector     0x08000000       0xc4
+                0x08000000                . = ALIGN (0x4)
+ *(.isr_vector)
+ .isr_vector    0x08000000       0xc4 /tmp/ccWOKklr.o
+                0x08000000                g_pfnVectors
+                0x080000c4                . = ALIGN (0x4)
+
+.text           0x080000c4      0x30c
+                0x080000c4                . = ALIGN (0x4)
+ *(.text)
+ .text          0x080000c4      0x114 /home/thomas.muth/localopt/eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.7.0.201602291252/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/armv6-m/libgcc.a(_udivsi3.o)
+                0x080000c4                __udivsi3
+                0x080000c4                __aeabi_uidiv
+                0x080001d0                __aeabi_uidivmod
+ .text          0x080001d8        0x4 /home/thomas.muth/localopt/eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.7.0.201602291252/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/armv6-m/libgcc.a(_dvmd_tls.o)
+                0x080001d8                __aeabi_ldiv0
+                0x080001d8                __aeabi_idiv0
+ *(.text.*)
+ .text.SysTick_Handler
+                0x080001dc       0x28 /tmp/ccOI5QUJ.o
+                0x080001dc                SysTick_Handler
+ .text.startup.main
+                0x08000204       0x60 /tmp/ccOI5QUJ.o
+                0x08000204                main
+ .text.SystemInit
+                0x08000264       0xb8 /tmp/ccQV2qh5.o
+                0x08000264                SystemInit
+ .text.Reset_Handler
+                0x0800031c       0x50 /tmp/ccWOKklr.o
+                0x0800031c                Reset_Handler
+ .text.Default_Handler
+                0x0800036c        0x2 /tmp/ccWOKklr.o
+                0x0800036c                TIM1_CC_IRQHandler
+                0x0800036c                HardFault_Handler
+                0x0800036c                ADC1_COMP_IRQHandler
+                0x0800036c                PVD_IRQHandler
+                0x0800036c                PendSV_Handler
+                0x0800036c                NMI_Handler
+                0x0800036c                I2C1_IRQHandler
+                0x0800036c                SPI1_IRQHandler
+                0x0800036c                TIM6_DAC_IRQHandler
+                0x0800036c                EXTI2_3_IRQHandler
+                0x0800036c                I2C2_IRQHandler
+                0x0800036c                TIM17_IRQHandler
+                0x0800036c                RTC_IRQHandler
+                0x0800036c                TIM16_IRQHandler
+                0x0800036c                TIM3_IRQHandler
+                0x0800036c                EXTI4_15_IRQHandler
+                0x0800036c                RCC_IRQHandler
+                0x0800036c                DMA1_Channel1_IRQHandler
+                0x0800036c                Default_Handler
+                0x0800036c                CEC_IRQHandler
+                0x0800036c                TIM14_IRQHandler
+                0x0800036c                DMA1_Channel4_5_IRQHandler
+                0x0800036c                TIM15_IRQHandler
+                0x0800036c                EXTI0_1_IRQHandler
+                0x0800036c                SPI2_IRQHandler
+                0x0800036c                SVC_Handler
+                0x0800036c                TS_IRQHandler
+                0x0800036c                WWDG_IRQHandler
+                0x0800036c                TIM2_IRQHandler
+                0x0800036c                DMA1_Channel2_3_IRQHandler
+                0x0800036c                USART2_IRQHandler
+                0x0800036c                FLASH_IRQHandler
+                0x0800036c                USART1_IRQHandler
+                0x0800036c                TIM1_BRK_UP_TRG_COM_IRQHandler
+ *fill*         0x0800036e        0x2 
+ .text.__libc_init_array
+                0x08000370       0x48 /home/thomas.muth/localopt/eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.7.0.201602291252/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m/libg.a(lib_a-init.o)
+                0x08000370                __libc_init_array
+ *(.rodata)
+ *(.rodata*)
+ *(.glue_7)
+ .glue_7        0x080003b8        0x0 linker stubs
+ *(.glue_7t)
+ .glue_7t       0x080003b8        0x0 linker stubs
+ *(.init)
+ .init          0x080003b8        0x4 /home/thomas.muth/localopt/eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.7.0.201602291252/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/armv6-m/crti.o
+                0x080003b8                _init
+ .init          0x080003bc        0x8 /home/thomas.muth/localopt/eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.7.0.201602291252/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/armv6-m/crtn.o
+ *(.fini)
+ .fini          0x080003c4        0x4 /home/thomas.muth/localopt/eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.7.0.201602291252/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/armv6-m/crti.o
+                0x080003c4                _fini
+ .fini          0x080003c8        0x8 /home/thomas.muth/localopt/eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.7.0.201602291252/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/armv6-m/crtn.o
+                0x080003d0                . = ALIGN (0x4)
+                0x080003d0                _etext = .
+                0x080003d0                _sidata = _etext
+
+.vfp11_veneer   0x080003d0        0x0
+ .vfp11_veneer  0x080003d0        0x0 linker stubs
+
+.v4_bx          0x080003d0        0x0
+ .v4_bx         0x080003d0        0x0 linker stubs
+
+.iplt           0x080003d0        0x0
+ .iplt          0x080003d0        0x0 /home/thomas.muth/localopt/eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.7.0.201602291252/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/armv6-m/crtbegin.o
+
+.rel.dyn        0x080003d0        0x0
+ .rel.iplt      0x080003d0        0x0 /home/thomas.muth/localopt/eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.7.0.201602291252/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/armv6-m/crtbegin.o
+
+.data           0x20000000        0x4 load address 0x080003d0
+                0x20000000                . = ALIGN (0x4)
+                0x20000000                _sdata = .
+                0x20000000                _data = .
+ *(.data)
+ *(.data.*)
+ .data.SystemCoreClock
+                0x20000000        0x4 /tmp/ccQV2qh5.o
+                0x20000000                SystemCoreClock
+ *(.RAMtext)
+                0x20000004                . = ALIGN (0x4)
+                0x20000004                _edata = .
+
+.igot.plt       0x20000004        0x0 load address 0x080003d4
+ .igot.plt      0x20000004        0x0 /home/thomas.muth/localopt/eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.7.0.201602291252/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/armv6-m/crtbegin.o
+
+.bss            0x20000004        0x4 load address 0x080003d4
+                0x20000004                . = ALIGN (0x4)
+                0x20000004                _sbss = .
+                0x20000004                _bss = .
+ *(.bss)
+ *(.bss.*)
+ .bss.tick.5971
+                0x20000004        0x2 /tmp/ccOI5QUJ.o
+ *(COMMON)
+                0x20000008                . = ALIGN (0x4)
+ *fill*         0x20000006        0x2 
+                0x20000008                _ebss = .
+                [!provide]                PROVIDE (end, _ebss)
+                [!provide]                PROVIDE (_end, _ebss)
+                0x20000008                __exidx_start = .
+                0x20000008                __exidx_end = .
+
+/DISCARD/
+ libc.a(*)
+ libm.a(*)
+ libgcc.a(*)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x00000000       0x6e
+ *(.comment)
+ .comment       0x00000000       0x6e /tmp/ccOI5QUJ.o
+                                 0x6f (size before relaxing)
+ .comment       0x0000006e       0x6f /tmp/ccQV2qh5.o
+
+.ARM.attributes
+                0x00000000       0x28
+ .ARM.attributes
+                0x00000000       0x1e /home/thomas.muth/localopt/eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.7.0.201602291252/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/armv6-m/crti.o
+ .ARM.attributes
+                0x0000001e       0x31 /tmp/ccOI5QUJ.o
+ .ARM.attributes
+                0x0000004f       0x31 /tmp/ccQV2qh5.o
+ .ARM.attributes
+                0x00000080       0x21 /tmp/ccWOKklr.o
+ .ARM.attributes
+                0x000000a1       0x1e /home/thomas.muth/localopt/eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.7.0.201602291252/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/armv6-m/libgcc.a(_udivsi3.o)
+ .ARM.attributes
+                0x000000bf       0x1e /home/thomas.muth/localopt/eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.7.0.201602291252/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/armv6-m/libgcc.a(_dvmd_tls.o)
+ .ARM.attributes
+                0x000000dd       0x2c /home/thomas.muth/localopt/eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.7.0.201602291252/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m/libg.a(lib_a-init.o)
+ .ARM.attributes
+                0x00000109       0x1e /home/thomas.muth/localopt/eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.7.0.201602291252/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/armv6-m/crtn.o
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges  0x00000000       0x78
+ *(.debug_aranges)
+ .debug_aranges
+                0x00000000       0x28 /tmp/ccOI5QUJ.o
+ .debug_aranges
+                0x00000028       0x28 /tmp/ccQV2qh5.o
+ .debug_aranges
+                0x00000050       0x28 /tmp/ccWOKklr.o
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info     0x00000000      0x954
+ *(.debug_info .gnu.linkonce.wi.*)
+ .debug_info    0x00000000      0x5df /tmp/ccOI5QUJ.o
+ .debug_info    0x000005df      0x2eb /tmp/ccQV2qh5.o
+ .debug_info    0x000008ca       0x8a /tmp/ccWOKklr.o
+
+.debug_abbrev   0x00000000      0x2d1
+ *(.debug_abbrev)
+ .debug_abbrev  0x00000000      0x18e /tmp/ccOI5QUJ.o
+ .debug_abbrev  0x0000018e      0x131 /tmp/ccQV2qh5.o
+ .debug_abbrev  0x000002bf       0x12 /tmp/ccWOKklr.o
+
+.debug_line     0x00000000      0x4b4
+ *(.debug_line)
+ .debug_line    0x00000000      0x220 /tmp/ccOI5QUJ.o
+ .debug_line    0x00000220      0x217 /tmp/ccQV2qh5.o
+ .debug_line    0x00000437       0x7d /tmp/ccWOKklr.o
+
+.debug_frame    0x00000000       0xcc
+ *(.debug_frame)
+ .debug_frame   0x00000000       0x38 /tmp/ccOI5QUJ.o
+ .debug_frame   0x00000038       0x48 /tmp/ccQV2qh5.o
+ .debug_frame   0x00000080       0x20 /home/thomas.muth/localopt/eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.7.0.201602291252/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/armv6-m/libgcc.a(_udivsi3.o)
+ .debug_frame   0x000000a0       0x2c /home/thomas.muth/localopt/eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.7.0.201602291252/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m/libg.a(lib_a-init.o)
+
+.debug_str      0x00000000      0x55d
+ *(.debug_str)
+ .debug_str     0x00000000      0x4a4 /tmp/ccOI5QUJ.o
+                                0x4ef (size before relaxing)
+ .debug_str     0x000004a4       0xb9 /tmp/ccQV2qh5.o
+                                0x2c8 (size before relaxing)
+
+.debug_loc      0x00000000      0x135
+ *(.debug_loc)
+ .debug_loc     0x00000000       0x59 /tmp/ccOI5QUJ.o
+ .debug_loc     0x00000059       0xdc /tmp/ccQV2qh5.o
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+OUTPUT(main.elf elf32-littlearm)
+
+.debug_ranges   0x00000000       0x50
+ .debug_ranges  0x00000000       0x18 /tmp/ccOI5QUJ.o
+ .debug_ranges  0x00000018       0x18 /tmp/ccQV2qh5.o
+ .debug_ranges  0x00000030       0x20 /tmp/ccWOKklr.o

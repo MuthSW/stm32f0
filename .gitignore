@@ -1,7 +1,8 @@
 .metadata
 workspace
-STM32F0-DISCOVERY
-STM32F0-Discovery_FW_V1.0.0
-stm32f0discovery_hal_lib
-RemoteSystemsTempFiles
+STM32F0-DISCOVERY/
+STM32F0-Discovery_FW_V1.0.0/
+stm32f0discovery_hal_lib/
+RemoteSystemsTempFiles/
+*.bin
 

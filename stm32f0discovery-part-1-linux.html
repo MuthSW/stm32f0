@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="halherta" />
+        <meta name="copyright" content="halherta" />
+
+<meta name="keywords" content="STM32F0, GCC, GDB, ARM, Cortex-M0, Microcontroller, STM32F0, " />
+        <title>STM32F0Discovery Under Linux Tutorial Part 1 – Setting up the GCC ARM Toolchain, OpenOCD and stlink  · Hertaville.com
+</title>
+        <link href="http://cdn-images.mailchimp.com/embedcode/slim-081711.css" rel="stylesheet" type="text/css">
+        <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.min.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="./theme/css/style.css" media="screen">
+        <link rel="stylesheet" type="text/css" href="./theme/css/solarizedlight.css" media="screen">
+        <link rel="shortcut icon" href="./theme/images/favicon.ico" type="image/x-icon" />
+        <link rel="apple-touch-icon" href="./theme/images/apple-touch-icon.png" />
+        <link rel="apple-touch-icon" sizes="57x57" href="./theme/images/apple-touch-icon-57x57.png" />
+        <link rel="apple-touch-icon" sizes="72x72" href="./theme/images/apple-touch-icon-72x72.png" />
+        <link rel="apple-touch-icon" sizes="114x114" href="./theme/images/apple-touch-icon-114x114.png" />
+        <link rel="apple-touch-icon" sizes="144x144" href="./theme/images/apple-touch-icon-144x144.png" />
+        <link rel="icon" href="./theme/images/apple-touch-icon-144x144.png" />
+    </head>
+    <body>
+        <div id="content-sans-footer">
+        <div class="navbar navbar-static-top">
+            <div class="navbar-inner">
+                <div class="container">
+                    <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </a>
+                    <a class="brand" href="./"><span class=site-name>Hertaville.com</span></a>
+                    <div class="nav-collapse collapse">
+                        <ul class="nav pull-right top-menu">
+                            <li ><a href=".">Home</a></li>
+                            <li ><a href="./categories.html">Categories</a></li>
+                            <li ><a href="./tags.html">Tags</a></li>
+                            <li ><a href="./archives.html">Archives</a></li>
+                            <li><form class="navbar-search" action="./search.html" onsubmit="return validateForm(this.elements['q'].value);"> <input type="text" class="search-query" placeholder="Search" name="q" id="tipue_search_input"></form></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row-fluid">
+                <div class="span1"></div>
+                <div class="span10">
+<article>
+<div class="row-fluid">
+    <header class="page_header span10 offset2">
+    <h1><a href="./stm32f0discovery-part-1-linux.html"> STM32F0Discovery Under Linux Tutorial Part 1 – Setting up the GCC ARM Toolchain, OpenOCD and stlink  </a></h1>
+    </header>
+</div>
+
+<div class="row-fluid">
+        <div class="span8 offset2 article-content">
+
+            <p>This is the first part of a 2-part tutorial on setting up&nbsp; and using a
+free and fully functional development environment with the
+STM32F0Discovery board on a Linux PC . The official ARM (<a class="reference external" href="https://launchpad.net/gcc-arm-embedded">GNU Tools for
+ARM Embedded Processors</a>) GCC
+toolchain and the openOCD and Texane's stlink debugger / programmer
+utilities will be used within a command line based environment.&nbsp; Two
+example projects will be utilized; one that's based on the STM32F0's
+standard peripheral library and one that isn't.</p>
+<p><strong>Why the ARM Cortex-M0 &amp; why the STM32F0 Family Specifically?</strong></p>
+<p>The ARM Cortex-M0 is a 32-bit core that strikes an excellent balance
+between performance,&nbsp; power usage and price. It may not be as
+sophisticated and powerful as its older siblings the ARM Cortex-M3 &amp; M4,
+but its simplicity, ease of use, lower cost and reduced power
+consumption easily makes up for that.&nbsp;The ARM Cortex-M0 core was
+designed to compete with other 8-bit/16-bit microcontroller cores and it
+succeeds in this goal on all major fronts; performance,low power, price
+and time to market.</p>
+<p>The STM32F0 Microcontroller family has a very generous dose of hardware
+peripherals generous memory options and now more packaging options that
+include 20-SSOP(0.65mm) and 32-LQFP (0.8mm), both of which are easier to
+hand solder than the classic 0.5mm QFP and QFN packages that are the
+norm for 32-bit microcontrollers. The STM32F0 Microcontroller family
+also has what has got to be the lowest cost development board with
+Debugger; the STM32F0 Discovery board. This board costs $8-$10, includes
+headers that are breadboard-able as well as a ST-LINK V2 debugger that
+can be used with other SMT32Fx based boards as well in addition to the
+target STM32F0 microcontroller. In addition it also has two switches and
+two LEDs.</p>
+<p>The major disadvantage of this board is that there's no cost free,
+<strong>cross platform</strong>, ready to go integrated development environment(IDE)
+solution for it. I originally wrote a series of tutorials for setting up
+a custom IDE for this board under MS Windows. There's also the <a class="reference external" href="http://www.coocox.org">Coocox
+IDE</a> which now supports the STM32F0 parts. Its
+free &amp; easy to use, but unfortunately is only available on MS Windows.</p>
+<p><strong>Downloading &amp; Installing the Toolchain &amp; Firmware Package</strong></p>
+<p>Here are the things that you will need to download:</p>
+<ul class="simple">
+<li>The<a class="reference external" href="https://launchpad.net/gcc-arm-embedded">GCC arm toolchain</a></li>
+<li>The<a class="reference external" href="http://www.st.com/web/catalog/tools/FM147/CL1794/SC961/SS1743/PF257885">STM32F0Discovery Firmware
+package</a></li>
+<li>The <a class="reference external" href="http://www.st.com/st-web-ui/static/active/en/resource/technical/document/data_brief/DM00050631.pdf">STM32F0Discovery Board User
+Manual</a></li>
+<li>The<a class="reference external" href="http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00039193.pdf">STM32F051C8
+Datasheet</a></li>
+<li>The <a class="reference external" href="http://www.st.com/web/en/resource/technical/document/reference_manual/DM00031936.pdf">STM32F0 Reference
+Manual</a></li>
+<li>The<a class="reference external" href="http://www.st.com/web/en/resource/technical/document/programming_manual/DM00051352.pdf">STM32F0 Cortex-M0 Programming
+Manual</a></li>
+</ul>
+<p>The toolchain linked above (<a class="reference external" href="https://launchpad.net/gcc-arm-embedded">GNU Tools for ARM Embedded
+Processors</a>) is actively
+developed by ARM engineers and is used in many Commercial IDEs. It is
+free, complete, has no limitations and is regularly updated. Be sure to
+download the Linux version from the <a class="reference external" href="https://launchpad.net/gcc-arm-embedded">Toolchain
+Website</a>.</p>
+<p>We will also download the STM32FoDiscovery Firmware Package. This
+package not only contains the standard peripheral libraries but also
+other important files such as linker files, startup files and the system
+files that are necessary to get the STM32F0 Microcontroller running.</p>
+<p>Finally it is imperative that we download and view all datasheets and
+reference manuals related to the STM32F0 Microcontroller. Documentation
+is your friend.</p>
+<ul>
+<li><p class="first">If a 64-bit Linux OS is being used, install 32-bit libraries. In
+Ubuntu based Distros, type:</p>
+<pre class="literal-block">
+sudo apt-get install ia32-libs
+</pre>
+<p>In Debian based distros first enable the 32-bit package repos:</p>
+<pre class="literal-block">
+dpkg --add-architecture i386
+</pre>
+<p>and then update:</p>
+<pre class="literal-block">
+apt-get update
+</pre>
+<p>Both commands must be run as root. Feel free to use “sudo” if it is
+already installed on your machine. Once the 32-bit repos are added,
+run:</p>
+<pre class="literal-block">
+apt-get install ia32-libs
+</pre>
+<p><p>as root.</p>
+</li>
+<li><p class="first">The First step is to create a directory in your home folder. I'll
+call it &quot;EmbeddedArm&quot;. From the terminal type:</p>
+<pre class="literal-block">
+mkdir ~/EmbeddedArm
+</pre>
+</li>
+<li><p class="first">Download the compressed Toolchain and extract it into the
+&quot;EmbeddedArm&quot; directory. Make sure you download the Linux version of
+the toolchain (it should end with the .tar.bz2 extension). Extraction
+can be achieved easily with the GUI based archive manager available
+on your distro. From the command line, navigate to the directory
+containing the compressed toolchain and extract it with the following
+command :</p>
+<pre class="literal-block">
+tar -xvjf gcc-arm-none-eabi-X_X-xxxxxx-xxxxxxxx-linux.tar.bz2 -C ~/EmbeddedArm/
+</pre>
+<p><p>The uppercase X 's should denote the version of the
+Compiler/toolchain while the lowercase x's should denote the release
+date. Since the toolchain is regularly updated, expect the version
+and release date of the toolchain to change regularly.</p>
+</li>
+<li><p class="first">The next step will be to add the toolchain's &quot;bin&quot; directory to the
+&quot;PATH&quot; environment variable. This will allow us to access the
+toolchain through the terminal from any directory on our Linux PC. To
+do this we will open the &quot;.bashrc&quot; file located in our home folder
+using the nano editor:</p>
+<pre class="literal-block">
+nano ~/.bashrc
+</pre>
+<p>and adding the following at the end of the .bashrc file:</p>
+<pre class="literal-block">
+export PATH=$PATH:$HOME/EmbeddedArm/gcc-arm-none-eabi-4_7-2013q2/bin
+</pre>
+<p>When&nbsp; done, exit the nano editor with Ctrl-X and when prompted to
+save the file choose yes. Once back on the command line type:</p>
+<pre class="literal-block">
+source ~/.bashrc
+</pre>
+<p><p>This should cause the change to be reflected immediately in the
+current terminal window. Alternatively we could close the terminal
+and re-open a new one.</p>
+</li>
+<li><p class="first">At this point the toolchain should be installed and accessible for
+any directory via the command line / terminal. To test the toolchain
+type:</p>
+</li>
+</ul>
+<pre class="literal-block">
+arm-none-eabi-gcc -v
+</pre>
+<p>The version information of the toolchain should be printed out (Figure
+1) indicating that the installation was successful.</p>
+<dl class="docutils">
+<dt><a class="reference external" href="files/uploads/2013/10/stm32f0lin0101.png"><img alt="Figure 1. ARM Toolchain successfully installed" src="files/uploads/2013/10/stm32f0lin0101.png" /></a></dt>
+<dd>Figure 1. ARM Toolchain successfully installed</dd>
+</dl>
+<ul>
+<li><p class="first">Now extract the STM32FoDiscovery Firmware Package&nbsp;(.zip file) and
+extract it into the &quot;EmbeddedArm&quot;&nbsp; directory&nbsp; with either the GUI
+archive manager or with the zip command from the command line. To
+install the zip utility type:</p>
+<pre class="literal-block">
+sudo apt-get install zip unzip
+</pre>
+<p>Once installed, type:</p>
+<pre class="literal-block">
+unzip stm32f0discovery_fw.zip -d ~/EmbeddedArm/
+</pre>
+</li>
+</ul>
+<p><strong>Downloading and Installing Texane's Stlink Utilities</strong></p>
+<p>Things that you will need to download:</p>
+<ul>
+<li><p class="first"><a class="reference external" href="https://github.com/texane/stlink">Texane's stlink Utility
+(github)</a></p>
+</li>
+<li><p class="first">First install the tools dependencies:</p>
+<pre class="literal-block">
+sudo apt-get install git libusb-1.0.0-dev pkg-config autotools-dev
+</pre>
+</li>
+<li><p class="first">Navigate into the &quot;EmbeddedArm&quot; directory:</p>
+<pre class="literal-block">
+cd ~/EmbeddedArm
+</pre>
+<p>and clone the Texane's stlink directory with this command:</p>
+<pre class="literal-block">
+git clone git://github.com/texane/stlink.git
+</pre>
+</li>
+<li><p class="first">Type the following commands:</p>
+<ul>
+<li><pre class="first literal-block">
+cd stlink
+</pre>
+<p><p><strong>&nbsp;</strong>to navigate into the stlink directory and then:</p>
+</li>
+<li><pre class="first literal-block">
+/autogen.sh
+</pre>
+</li>
+<li><pre class="first literal-block">
+./configure
+</pre>
+</li>
+<li><pre class="first literal-block">
+make
+</pre>
+</li>
+</ul>
+<p><p>The three commands above build the <em>st-util</em> and <em>st-flash</em> binaries
+in the stlink directory! the st-util binary is a GDBserver that
+communicates with the STLink V/2 hardware on the STM32F0Discovery
+board, and is used for debugging. The st-flash binary can be used to
+program the target STM32F0 on the dev board via the STLINK V/2
+hardware.</p>
+</li>
+<li><p class="first">At this point copy the file &quot;49-stlinkv2.rules&quot; from its location in
+the stlink directory, to the &quot;/etc/udev/rules.d/<strong>&quot;</strong>directory :</p>
+<pre class="literal-block">
+sudo cp ~/EmbeddedArm/stlink/49-stlinkv2.rules /etc/udev/rules.d/
+</pre>
+</li>
+<li><p class="first">This gives user access to the STLINK V/2 hardware (on the STM32F0
+Discovery board) through the Linux OS. To immediately load the .rules
+file without a reboot, typeL</p>
+<pre class="literal-block">
+sudo udevadm control --reload-rules
+</pre>
+</li>
+<li><p class="first">Finally add the stlink directory to the PATH variable in the
+~/.bashrc file. This will allow us to use the st-util and st-flash
+binaries from anywhere on on our PC via the terminal. Using the nano
+editor, open the .bashrc file:</p>
+<pre class="literal-block">
+nano ~/.bashrc
+</pre>
+<p>and then type the following at the end of the file:</p>
+<pre class="literal-block">
+export PATH=$PATH:$HOME/EmbeddedArm/stlink/
+</pre>
+<p>Then exit the nano editor and save all changes. Once you are back in
+the terminal window, type:</p>
+<pre class="literal-block">
+source ~/.bashrc
+</pre>
+<p><p>to immediately reload the new PATH variable.</p>
+</li>
+<li><p class="first">To test the st-util GDBserver connect the STM32F0Discovery board to
+your PC and&nbsp; type at the command line:</p>
+<pre class="literal-block">
+st-util
+</pre>
+<p><p>You should see output identical to that in Figure 2.</p>
+</li>
+</ul>
+<dl class="docutils">
+<dt><a class="reference external" href="files/uploads/2013/10/stm32f0lin0102.png"><img alt="Figure 2. st-util successfully installed" src="files/uploads/2013/10/stm32f0lin0102.png" /></a></dt>
+<dd>Figure 2. st-util successfully installed</dd>
+</dl>
+<ul class="simple">
+<li>To test the st-flash programming utility simply type at the command
+line:</li>
+</ul>
+<pre class="literal-block">
+st-flash read out.bin 0x8000000 4096
+</pre>
+<ul class="simple">
+<li>This command reads the contents of the flash / program memory (first
+4096 bytes) starting at address 0x8000000 (beginning of flash /
+program memory) and saves it into out.bin. You should see output
+identical to that in Figure 3.</li>
+</ul>
+<dl class="docutils">
+<dt><a class="reference external" href="files/uploads/2013/10/stm32f0lin0103.png"><img alt="Figure 3. st-flash successfully installed" src="files/uploads/2013/10/stm32f0lin0103.png" /></a></dt>
+<dd>Figure 3. st-flash successfully installed</dd>
+</dl>
+<ul class="simple">
+<li>I highly recommend that you read the documentation that comes with
+the stlink utility. It comes in the form of a pdf file that's located
+at: &quot;~/EmbeddedArm/stlink/doc/tutorial/tutorial.pdf&quot;</li>
+</ul>
+<p><strong>Downloading and Installing OpenOCD</strong></p>
+<p>Things that you will need to download:</p>
+<ul class="simple">
+<li>The latest <a class="reference external" href="http://sourceforge.net/projects/openocd/files/openocd/">openOCD
+release</a></li>
+</ul>
+<p>In this section of the tutorial,
+<a class="reference external" href="http://openocd.sourceforge.net/">OpenOCD</a> will be downloaded,
+extracted, built and installed.&nbsp; OpenOCD is a gdbserver application with
+built-in support for the debugger included in the STM32FoDiscovery; the
+ST-LINK V/2.....OpenOCD like Texane's stlink, can be used to download
+code to the STM32F0Discovery as well as to perform hardware debugging.
+OpenOCD is distributed as source, so we will have to download it,
+extract it, build it and install it.</p>
+<ul>
+<li><p class="first">To start,&nbsp; download the latest <a class="reference external" href="http://sourceforge.net/projects/openocd/files/openocd/">openOCD
+release</a>.
+Once downloaded extract the openOCD compressed source file (.tar.bz2)
+to the EmbeddedArm folder using a GUI archive manager or from the
+command line with the following command:</p>
+<pre class="literal-block">
+tar -xvjf openocd-x.x.x.tar.bz2 -C ~/EmbeddedArm/
+</pre>
+<p>Again the lowercase x's denote the version number of OpenOCD. Before
+building OpenOCD we need to install some dependencies as instructed
+on <a class="reference external" href="http://engineering-diy.blogspot.ca/2012/11/stm32f3-discovery-eclipse-openocd.html">this
+site</a>.
+The following command should install all dependencies:</p>
+<pre class="literal-block">
+sudo apt-get install git zlib1g-dev libtool flex bison libgmp3-dev libmpfr-dev libncurses5-dev libmpc-dev autoconf texinfo build-essential libftdi-dev libusb-1.0.0-dev
+</pre>
+<p><p>.</p>
+</li>
+<li><p class="first">Navigate into the OpenOCD source folder:</p>
+<pre class="literal-block">
+cd ~/EmbeddedArm/openocd-x.x.x
+</pre>
+<p>and type the following commands in order:</p>
+<ul>
+<li><pre class="first literal-block">
+./configure --enable-maintainer-mode --enable-stlink  --prefix=$HOME/EmbeddedArm/openocd-bin
+</pre>
+</li>
+<li><pre class="first literal-block">
+make
+</pre>
+</li>
+<li><pre class="first literal-block">
+make install
+</pre>
+</li>
+</ul>
+</li>
+</ul>
+<p>&nbsp;&nbsp;&nbsp; The first command configures the openOCD build to include support
+for the ST-LINK V/2 debugger/programmer and specifies the directory
+&quot;$HOME/EmbeddedArm/openocd-bin&quot; that will contain the openOCD binaries.
+The second command builds openOCD and the third command installs it by
+putting all binary files in the directory specified by the first
+command. If this directory is located outside of the home folder tree,
+it must have root privileges i.e.</p>
+<pre class="literal-block">
+sudo make install
+</pre>
+<ul>
+<li><p class="first">If you have already installed Texane's stlink as instructed in the
+previous section, make sure that the &quot;49-stlinkv2.rules&quot; is in the
+&quot;/etc/udev/rules.d&quot; directory as instructed above. If you have NOT
+installed the stlink utility. or for some reason refuse to do so,
+create the following file with nano:</p>
+<pre class="literal-block">
+sudo nano  /etc/udev/rules.d/stlinkv2.rules
+</pre>
+</li>
+<li><p class="first">Now add the following text to it:</p>
+<pre class="literal-block">
+ATTRS{idVendor}==&quot;0483&quot;, ATTRS{idProduct}==&quot;3748&quot;, MODE=&quot;0666&quot;
+</pre>
+<p>Exit nano and save the file. This file is required to give the non
+root user access to the ST-LINK V/2 hardware on the STM32F0Discovery.
+Now reload the udev rules:</p>
+<pre class="literal-block">
+sudo udevadm control --reload-rules
+</pre>
+</li>
+<li><p class="first">Finally open .bashrc file in the home directory again with nano and
+add at the bottom of the file:</p>
+<pre class="literal-block">
+export PATH=$PATH:$HOME/EmbeddedArm/openocd-bin/bin
+</pre>
+<p>Close the file and save changes. then type:</p>
+<pre class="literal-block">
+source ~/.bashrc
+</pre>
+<p><p>in the terminal window to reload the new updated PATH variable. This
+will allow us to access the openOCD binary from any directory on our
+computer via the terminal.</p>
+</li>
+</ul>
+<dl class="docutils">
+<dt><a class="reference external" href="files/uploads/2013/10/stm32f0lin0104.png"><img alt="Figure 4. OpenOCD successfully installed" src="files/uploads/2013/10/stm32f0lin0104.png" /></a></dt>
+<dd>Figure 4. OpenOCD successfully installed</dd>
+</dl>
+<ul>
+<li><p class="first">Connect the STM32Discovery to your computer and run the following
+command:</p>
+<pre class="literal-block">
+openocd -s ~/EmbeddedArm/openocd-bin/share/openocd/scripts/ -f board/stm32f0discovery.cfg
+</pre>
+<p>or</p>
+<pre class="literal-block">
+openocd -s ~/EmbeddedArm/openocd-bin/share/openocd/scripts/ -f interface/stlink-v2.cfg -f target/stm32f0x_stlink.cfg
+</pre>
+<p><p>The -s flag sets the search directory that openOCD should search in
+to locate the appropriate configuration files. The -f flag specifies
+a particular file within that directory. The first command simply
+specifies the configuration file for the evaluation board whereas the
+second specifies the configuration file for the programming interface
+(&quot;stlink-v2.cfg&quot;) and the target (&quot;stm32f0x_stlink.cfg&quot;). With
+either command, the OpenOCD gdbserver should successfully be
+activated as shown in Figures 4 &amp; 5.</p>
+</li>
+</ul>
+<dl class="docutils">
+<dt><a class="reference external" href="files/uploads/2013/10/stm32f0lin0105.png"><img alt="Figure 5. OpenOCD successfully installed" src="files/uploads/2013/10/stm32f0lin0105.png" /></a></dt>
+<dd>Figure 5. OpenOCD successfully installed</dd>
+</dl>
+<p><strong>OpenOCD vs Texane's Stlink</strong></p>
+<p>Texane's stlink tools are dedicated to the ST-Link hardware and work
+very well for programming and debugging with the ST-Link &amp; ST-Link V/2.
+I like them because they are is easier to type out, the commands are
+shorter and can be easily integrated into a makefile.</p>
+<p>OpenOCD is a much more encompassing utility that works with a multitude
+of Programming/ Debugging hardware and supports a huge list of target
+microcontroller/ microcontroller architectures. I personally find it a
+little harder to use, but it can do pretty much everything that Texane's
+stlink tools do.</p>
+<p>At this point the &quot;EmbeddedARM&quot; should have 5 folders:</p>
+<ul class="simple">
+<li>&quot;<em>gcc-arm-none-eabi-4_7-2013q2</em>&quot;&nbsp; - The ARM toolchain folder</li>
+<li>&quot;<em>openocd-0.7.0</em>&quot; - The openOCD source folder</li>
+<li>&quot;<em>openocd-bin</em>&quot; - The openOCD binary folder</li>
+<li>&quot;stlink&quot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -&nbsp; Texane's stlink utility</li>
+<li>&quot;STM32F0-Discovery_FW_V1.0.0&quot; - The STM32F0 Discovery standard
+peripheral library &amp; CMSIS library</li>
+</ul>
+<p>In the next tutorial we will take a look at <a class="reference external" href="./stm32f0discovery-command-line-ide.html">using a minimalist
+integrated development environment from the command
+line</a>.</p>
+
+            <aside>
+            <hr/>
+            <nav>
+            <ul class="articles_timeline">
+ 
+                <li class="previous_article">« <a href="./interfacing-an-spi-adc-mcp3008-chip-to-the-raspberry-pi-using-c.html" title="Previous: Interfacing an SPI ADC (MCP3008) chip to the Raspberry Pi using C++ (spidev)">Interfacing an SPI ADC (MCP3008) chip to the Raspberry Pi using C++ (spidev)</a></li>
+ 
+                <li class="next_article"><a href="./stm32f0discovery-command-line-ide.html" title="Next: STM32F0Discovery Under Linux Tutorial Part 2 - Using a Minimalist Integrated Development Environment From the Command Line">STM32F0Discovery Under Linux Tutorial Part 2 - Using a Minimalist Integrated Development Environment From the Command Line</a> »</li>
+            </ul>
+            </nav>
+            </aside>
+        </div>
+        <section>
+        <div class="span2" style="float:right;font-size:0.9em;">
+ 
+            <h4>Published</h4>
+            <time pubdate="pubdate" datetime="2013-09-02T17:30:00-04:00">Sep 2, 2013</time>
+            <h4>Category</h4>
+            <a class="category-link" href="/categories.html#STM32F0-ref">STM32F0</a> 
+            <h4>Tags</h4>
+            <ul class="list-of-tags tags-in-article"> 
+                <li><a href="/tags.html#ARM-ref">ARM
+                    <span>1</span>
+</a></li>
+                <li><a href="/tags.html#Cortex-M0-ref">Cortex-M0
+                    <span>1</span>
+</a></li>
+                <li><a href="/tags.html#GCC-ref">GCC
+                    <span>11</span>
+</a></li>
+                <li><a href="/tags.html#GDB-ref">GDB
+                    <span>4</span>
+</a></li>
+                <li><a href="/tags.html#Microcontroller-ref">Microcontroller
+                    <span>1</span>
+</a></li>
+                <li><a href="/tags.html#STM32F0-ref">STM32F0
+                    <span>11</span>
+</a></li>
+            </ul>
+
+        </div>
+        </section>
+</div>
+</article>
+                </div>
+                <div class="span1"></div>
+            </div>
+        </div>
+    </div>
+<footer>
+<div id="footer">
+    <ul class="footer-content">
+        <li class="elegant-power">Powered by <a href="http://getpelican.com/" title="Pelican Home Page">Pelican</a>. Theme: <a href="http://oncrashreboot.com/pelican-elegant" title="Theme Elegant Home Page">Elegant</a> by <a href="http://oncrashreboot.com" title="Talha Mansoor Home Page">Talha Mansoor</a></li>
+    </ul>
+</div>
+</footer>            <script src="http://code.jquery.com/jquery.min.js"></script>
+        <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/js/bootstrap.min.js"></script>
+        <script>
+            function validateForm(query)
+            {
+                return (query.length > 0);
+            }
+        </script>
+
+    </body>
+</html>
