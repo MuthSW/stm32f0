@@ -38,6 +38,7 @@
 #include "gpio.h"
 
 /* USER CODE BEGIN Includes */
+#include "stm32f0308_discovery.h"
 #include "lcd.h"
 /* USER CODE END Includes */
 
@@ -45,6 +46,8 @@
 
 /* USER CODE BEGIN PV */
 /* Private variables ---------------------------------------------------------*/
+
+uint8_t aShowTime[50] = {0};
 
 /* USER CODE END PV */
 
@@ -89,18 +92,27 @@ int main(void)
 	LCDClear();
 	LCDStr ( 0, "   LCD Test   ", 0 );
 	LCDStr ( 1, "  SUCCESS!!!  ", 0 );
-	LCDStr ( 5, "exit          ", 0 );
-	LCDUpdate();	
+	LCDStr ( 5, "exit          ", 1 );
+	LCDUpdate();
+	
+	HAL_Delay(5000);
 
-	//uint8_t s[]="ABCDEFGHJKLMNOPQRSTUVWXYZ";
-	//lcd_string(s);
-	//lcd_contrast( 0xC2 );
+	LCDClear();
+	LCDStr ( 0, "   RTC Test   ", 0 );	
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1)
   {
+			BSP_LED_Toggle(LED_GREEN);
+			RTC_TimeShow(aShowTime);
+			LCDStr( 2, aShowTime, 0 );
+			LCDUpdate();		
+			
+			//ADC_read(&adc_val);
+			//HAL_ADC_Start_IT(&hadc);
+			HAL_Delay(1000);		
   /* USER CODE END WHILE */
 
   /* USER CODE BEGIN 3 */
