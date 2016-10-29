@@ -38,7 +38,7 @@
 #include "gpio.h"
 
 /* USER CODE BEGIN Includes */
-#include "lcd5110.h"
+#include "lcd.h"
 /* USER CODE END Includes */
 
 /* Private variables ---------------------------------------------------------*/
@@ -83,12 +83,17 @@ int main(void)
   MX_SPI1_Init();
 
   /* USER CODE BEGIN 2 */
-	lcd_init();
-	lcd_clear();
-	lcd_set_inverse(0);
+	
+	LCDInit();
+	LCDContrast(0x45);
+	LCDClear();
+	LCDStr ( 0, "   LCD Test   ", 0 );
+	LCDStr ( 1, "  SUCCESS!!!  ", 0 );
+	LCDStr ( 5, "exit          ", 0 );
+	LCDUpdate();	
 
-	uint8_t s[]="ABCDEFGHJKLMNOPQRSTUVWXYZ";
-	lcd_string(s);
+	//uint8_t s[]="ABCDEFGHJKLMNOPQRSTUVWXYZ";
+	//lcd_string(s);
 	//lcd_contrast( 0xC2 );
   /* USER CODE END 2 */
 
