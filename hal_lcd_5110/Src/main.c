@@ -48,6 +48,7 @@
 /* Private variables ---------------------------------------------------------*/
 
 uint8_t aShowTime[50] = {0};
+uint8_t alarm_status = 0;
 
 /* USER CODE END PV */
 
@@ -173,6 +174,34 @@ void SystemClock_Config(void)
 }
 
 /* USER CODE BEGIN 4 */
+
+/**
+  * @brief  Alarm callback
+  * @param  hrtc : RTC handle
+  * @retval None
+  */
+void HAL_RTC_AlarmAEventCallback(RTC_HandleTypeDef *hrtc)
+{
+  /* Turn LED3 on: Alarm generation */
+  BSP_LED_On(LED_BLUE);
+	LCDStr( 3, "Alarm", 0 );
+	LCDUpdate();		
+}
+
+/**
+  * @brief EXTI line detection callbacks
+  * @param GPIO_Pin: Specifies the pins connected EXTI line
+  * @retval None
+  */
+void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
+{
+  if (GPIO_Pin == USER_BUTTON_PIN)
+  {
+    /* Toggle LED2 */
+    BSP_LED_Toggle(LED_BLUE);
+  }
+}
+
 
 /* USER CODE END 4 */
 

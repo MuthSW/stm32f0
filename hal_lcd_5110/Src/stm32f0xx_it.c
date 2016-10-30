@@ -84,6 +84,20 @@ void RTC_IRQHandler(void)
 }
 
 /**
+* @brief This function handles EXTI line 0 and 1 interrupts.
+*/
+void EXTI0_1_IRQHandler(void)
+{
+  /* USER CODE BEGIN EXTI0_1_IRQn 0 */
+
+  /* USER CODE END EXTI0_1_IRQn 0 */
+  HAL_GPIO_EXTI_IRQHandler(GPIO_PIN_0);
+  /* USER CODE BEGIN EXTI0_1_IRQn 1 */
+
+  /* USER CODE END EXTI0_1_IRQn 1 */
+}
+
+/**
 * @brief This function handles ADC and COMP interrupts (COMP interrupts through EXTI lines 21 and 22).
 */
 void ADC1_COMP_IRQHandler(void)
