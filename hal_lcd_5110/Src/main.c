@@ -111,7 +111,7 @@ int main(void)
 			LCDUpdate();		
 			
 			//ADC_read(&adc_val);
-			//HAL_ADC_Start_IT(&hadc);
+			HAL_ADC_Start_IT(&hadc);
 			HAL_Delay(1000);		
   /* USER CODE END WHILE */
 

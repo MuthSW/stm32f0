@@ -37,6 +37,18 @@
 
 /* USER CODE BEGIN 0 */
 
+uint16_t ADC_raw[3];
+unsigned Vdd;
+unsigned Vin;
+unsigned temperature;
+//uint8_t adc_index = 0;
+uint8_t adc_index = 0;
+
+/* Variables for ADC conversions results computation to physical values */
+uint16_t   uhADCChannelToDAC_mVolt = 0;
+uint16_t   uhVrefInt_mVolt = 0;
+ int32_t   wTemperature_DegreeCelsius = 0;
+
 /* USER CODE END 0 */
 
 ADC_HandleTypeDef hadc;
@@ -135,6 +147,70 @@ void HAL_ADC_MspDeInit(ADC_HandleTypeDef* adcHandle)
 } 
 
 /* USER CODE BEGIN 1 */
+
+HAL_StatusTypeDef ADC_read(uint32_t* result)
+{
+	HAL_StatusTypeDef tmp_hal_status = HAL_OK;
+	
+	tmp_hal_status = HAL_ADC_Start(&hadc);
+	if (tmp_hal_status == HAL_OK) {
+		tmp_hal_status = HAL_ADC_PollForConversion(&hadc, 500);
+		if ( tmp_hal_status == HAL_OK){
+			*result = HAL_ADC_GetValue(&hadc);
+		}
+	}
+	return tmp_hal_status;
+}
+
+void HAL_ADC_ConvCpltCallback(ADC_HandleTypeDef* hadc)
+{
+	// 0: ADC_CHANNEL_TEMPSENSOR
+	// 1: ADC_CHANNEL_VREFINT
+	// 2: ADC_CHANNEL_VBAT
+	
+//	if (__HAL_ADC_GET_FLAG(hadc, ADC_FLAG_EOC))
+//	{
+//		ADC_raw[adc_index] = HAL_ADC_GetValue(hadc);
+//		if (adc_index == 1) {
+//			Vdd = 3300 * (*VREFINT_CAL_ADDR)/ADC_raw[adc_index];
+//		}
+//		adc_index++;
+//		if (adc_index >= 3){ adc_index = 0;};
+//		
+//	}	
+	if (__HAL_ADC_GET_FLAG(hadc, ADC_FLAG_EOC))
+		{
+		ADC_raw[adc_index] = HAL_ADC_GetValue(hadc);
+		adc_index++;
+		}
+
+	if (__HAL_ADC_GET_FLAG(hadc, ADC_FLAG_EOS))
+		{
+		adc_index = 0;
+
+		Vdd = 3300 * (*VREFINT_CAL_ADDR) / ADC_raw[2];
+
+		temperature = (((int32_t)ADC_raw[1] * Vdd/3300)- (int32_t) *TEMP30_CAL_ADDR );
+		temperature = temperature * (int32_t)(110 - 30);
+		temperature = temperature / (int32_t)(*TEMP110_CAL_ADDR - *TEMP30_CAL_ADDR);
+		temperature = temperature + 30;
+
+
+		Vin = Vdd*ADC_raw[0]/4095;
+
+		/* Computation of ADC conversions raw data to physical values */
+		/* Note: ADC results are transferred into array "ADC_raw"  */
+		/*       in the order of their rank in ADC sequencer.                   */
+		uhADCChannelToDAC_mVolt    = COMPUTATION_DIGITAL_12BITS_TO_VOLTAGE(ADC_raw[2]);
+		uhVrefInt_mVolt            = COMPUTATION_DIGITAL_12BITS_TO_VOLTAGE(ADC_raw[1]);
+		wTemperature_DegreeCelsius = COMPUTATION_TEMPERATURE_TEMP30_TEMP110(ADC_raw[0]);
+      			
+			
+		}		
+		
+		
+}
+
 
 /* USER CODE END 1 */
 
