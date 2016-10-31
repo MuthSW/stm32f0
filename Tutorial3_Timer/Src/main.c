@@ -31,6 +31,7 @@
   ******************************************************************************
   */
 /* Includes ------------------------------------------------------------------*/
+#include "main.h"
 #include "stm32f0xx_hal.h"
 
 /* USER CODE BEGIN Includes */
@@ -53,8 +54,8 @@ uint32_t count = 0;
 void SystemClock_Config(void);
 void Error_Handler(void);
 static void MX_GPIO_Init(void);
-static void MX_TIM3_Init(void);
 static void MX_TIM2_Init(void);
+static void MX_TIM3_Init(void);
 
 /* USER CODE BEGIN PFP */
 /* Private function prototypes -----------------------------------------------*/
@@ -85,8 +86,8 @@ int main(void)
 
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
-  MX_TIM3_Init();
   MX_TIM2_Init();
+  MX_TIM3_Init();
 
   /* USER CODE BEGIN 2 */
 
@@ -118,6 +119,8 @@ void SystemClock_Config(void)
   RCC_OscInitTypeDef RCC_OscInitStruct;
   RCC_ClkInitTypeDef RCC_ClkInitStruct;
 
+    /**Initializes the CPU, AHB and APB busses clocks 
+    */
   RCC_OscInitStruct.OscillatorType = RCC_OSCILLATORTYPE_HSI;
   RCC_OscInitStruct.HSIState = RCC_HSI_ON;
   RCC_OscInitStruct.HSICalibrationValue = 16;
@@ -130,18 +133,25 @@ void SystemClock_Config(void)
     Error_Handler();
   }
 
+    /**Initializes the CPU, AHB and APB busses clocks 
+    */
   RCC_ClkInitStruct.ClockType = RCC_CLOCKTYPE_HCLK|RCC_CLOCKTYPE_SYSCLK
                               |RCC_CLOCKTYPE_PCLK1;
   RCC_ClkInitStruct.SYSCLKSource = RCC_SYSCLKSOURCE_PLLCLK;
   RCC_ClkInitStruct.AHBCLKDivider = RCC_SYSCLK_DIV1;
   RCC_ClkInitStruct.APB1CLKDivider = RCC_HCLK_DIV1;
+
   if (HAL_RCC_ClockConfig(&RCC_ClkInitStruct, FLASH_LATENCY_1) != HAL_OK)
   {
     Error_Handler();
   }
 
+    /**Configure the Systick interrupt time 
+    */
   HAL_SYSTICK_Config(HAL_RCC_GetHCLKFreq()/1000);
 
+    /**Configure the Systick 
+    */
   HAL_SYSTICK_CLKSourceConfig(SYSTICK_CLKSOURCE_HCLK);
 
   /* SysTick_IRQn interrupt configuration */
@@ -168,7 +178,7 @@ static void MX_TIM2_Init(void)
   sSlaveConfig.SlaveMode = TIM_SLAVEMODE_EXTERNAL1;
   sSlaveConfig.InputTrigger = TIM_TS_TI1FP1;
   sSlaveConfig.TriggerPolarity = TIM_TRIGGERPOLARITY_RISING;
-  sSlaveConfig.TriggerFilter = 15;
+  sSlaveConfig.TriggerFilter = 0;
   if (HAL_TIM_SlaveConfigSynchronization(&htim2, &sSlaveConfig) != HAL_OK)
   {
     Error_Handler();
@@ -191,9 +201,9 @@ static void MX_TIM3_Init(void)
   TIM_MasterConfigTypeDef sMasterConfig;
 
   htim3.Instance = TIM3;
-  htim3.Init.Prescaler = 48000;
+  htim3.Init.Prescaler = 0;
   htim3.Init.CounterMode = TIM_COUNTERMODE_UP;
-  htim3.Init.Period = 499;
+  htim3.Init.Period = 0;
   htim3.Init.ClockDivision = TIM_CLOCKDIVISION_DIV1;
   if (HAL_TIM_Base_Init(&htim3) != HAL_OK)
   {

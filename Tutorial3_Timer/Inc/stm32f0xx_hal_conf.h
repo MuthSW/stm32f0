@@ -40,8 +40,7 @@
  extern "C" {
 #endif
 
-#include "mxconstants.h" 
-
+#include "main.h"
 /* Exported types ------------------------------------------------------------*/
 /* Exported constants --------------------------------------------------------*/
 
@@ -173,7 +172,7 @@
   * @brief Uncomment the line below to expanse the "assert_param" macro in the 
   *        HAL drivers code
   */
- #define USE_FULL_ASSERT   1 
+/* #define USE_FULL_ASSERT   1 */
 
 /* Includes ------------------------------------------------------------------*/
 /**

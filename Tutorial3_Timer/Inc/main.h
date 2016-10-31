@@ -1,7 +1,7 @@
 /**
   ******************************************************************************
-  * @file    stm32f0xx_it.h
-  * @brief   This file contains the headers of the interrupt handlers.
+  * File Name          : main.h
+  * Description        : This file contains the common defines of the application
   ******************************************************************************
   *
   * COPYRIGHT(c) 2016 STMicroelectronics
@@ -30,27 +30,36 @@
   *
   ******************************************************************************
   */
-
 /* Define to prevent recursive inclusion -------------------------------------*/
-#ifndef __STM32F0xx_IT_H
-#define __STM32F0xx_IT_H
+#ifndef __MAIN_H
+#define __MAIN_H
+  /* Includes ------------------------------------------------------------------*/
 
-#ifdef __cplusplus
- extern "C" {
-#endif 
+/* USER CODE BEGIN Includes */
 
-/* Includes ------------------------------------------------------------------*/
-/* Exported types ------------------------------------------------------------*/
-/* Exported constants --------------------------------------------------------*/
-/* Exported macro ------------------------------------------------------------*/
-/* Exported functions ------------------------------------------------------- */
+/* USER CODE END Includes */
 
-void SysTick_Handler(void);
+/* Private define ------------------------------------------------------------*/
 
-#ifdef __cplusplus
-}
-#endif
+#define LD4_Pin GPIO_PIN_8
+#define LD4_GPIO_Port GPIOC
+#define LD3_Pin GPIO_PIN_9
+#define LD3_GPIO_Port GPIOC
+#define SWDIO_Pin GPIO_PIN_13
+#define SWDIO_GPIO_Port GPIOA
+#define SWCLK_Pin GPIO_PIN_14
+#define SWCLK_GPIO_Port GPIOA
+/* USER CODE BEGIN Private defines */
 
-#endif /* __STM32F0xx_IT_H */
+/* USER CODE END Private defines */
 
+/**
+  * @}
+  */ 
+
+/**
+  * @}
+*/ 
+
+#endif /* __MAIN_H */
 /************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/
