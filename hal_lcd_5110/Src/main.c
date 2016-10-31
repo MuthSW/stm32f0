@@ -40,6 +40,7 @@
 /* USER CODE BEGIN Includes */
 #include "stm32f0308_discovery.h"
 #include "lcd.h"
+#include "stm32f0xx_lp_modes.h"
 /* USER CODE END Includes */
 
 /* Private variables ---------------------------------------------------------*/
@@ -112,8 +113,9 @@ int main(void)
 			LCDUpdate();		
 			
 			//ADC_read(&adc_val);
-			HAL_ADC_Start_IT(&hadc);
-			HAL_Delay(1000);		
+			//HAL_ADC_Start_IT(&hadc);
+			HAL_Delay(5000);		
+			StopMode_Measure();
   /* USER CODE END WHILE */
 
   /* USER CODE BEGIN 3 */
