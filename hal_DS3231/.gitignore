@@ -1,3 +1,4 @@
-MDK-ARM/hal_nokialcd/
+MDK-ARM/hal_DS3231/
 MDK-ARM/RTE/
 MDK-ARM/*.lst
+MDK-ARM/*.s
